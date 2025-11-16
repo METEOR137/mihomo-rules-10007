@@ -1,0 +1,93 @@
+name: Convert MRS Ruleset
+
+on:
+  workflow_dispatch:  # 手动触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'yaml/**'  # 当yaml目录下的文件有变化时触发
+
+env:
+  MIHOMO_VERSION: "v1.19.15"
+
+jobs:
+  convert-ruleset:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          
+      - name: Set current datetime
+        run: echo "update_time=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S UTC+8')" >> $GITHUB_ENV
+        
+      - name: Download and setup mihomo
+        run: |
+          # 下载并解压mihomo
+          curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-v3-${{ env.MIHOMO_VERSION }}.gz
+          gzip -d mihomo.gz
+          chmod +x ./mihomo
+          
+          # 创建输出目录
+          mkdir -p ./mrs/
+          
+      - name: Convert yaml files to mrs
+        run: |
+          # 转换所有.yaml文件
+          for yaml_file in ./yaml/*.yaml; do
+            if [ -f "$yaml_file" ]; then
+              filename=$(basename "$yaml_file" .yaml)
+              output_file="./mrs/${filename}.mrs"
+              echo "Converting $yaml_file to $output_file"
+              ./mihomo convert-ruleset domain yaml "$yaml_file" "$output_file"
+            fi
+          done
+          
+      - name: List generated mrs files and create release body
+        run: |
+          echo "生成的文件列表:"
+          ls -la ./mrs/
+          
+          # 创建 release body 文件
+          cat > release_body.md << EOF
+          自动转换自定义的yaml格式规则集到mrs格式规则集
+          生成时间: ${{ env.update_time }}
+          
+          包含以下规则集文件:
+          
+          EOF
+          
+          # 添加文件列表到 release body
+          for file in ./mrs/*.mrs; do
+            if [ -f "$file" ]; then
+              echo "- $(basename "$file")" >> release_body.md
+            fi
+          done
+          
+      - name: Create or update release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ruleset-latest
+          name: "Custom Mihomo Ruleset"
+          body_path: release_body.md
+          files: ./mrs/*
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Commit and push generated rulesets
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ./mrs/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto convert yaml ruleset to mrs ruleset - ${{ env.update_time }}"
+            git push origin main
+          fi

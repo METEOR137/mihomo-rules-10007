@@ -1,4 +1,4 @@
-name: Convert MRS Ruleset
+name: 转换 MRS 规则
 
 on:
   workflow_dispatch:  # 手动触发

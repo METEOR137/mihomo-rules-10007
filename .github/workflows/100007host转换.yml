@@ -29,10 +29,7 @@ jobs:
         awk '{print "  - "$2}' > yaml/mihomo_rules.yaml
         
         # 添加YAML文件头
-        echo "payload:" | cat - yaml/mihomo_rules.yaml > temp && mv temp yaml/mihomo_rules.yaml
-        
-        # 添加文件尾（可选）
-        echo "# 规则已自动生成于 $(date)" >> yaml/mihomo_rules.yaml
+        echo "payload:" | cat - yaml/mihomo_rules.yaml > temp && mv temp yaml/10007host.yaml
 
     - name: Commit changes
       run: |

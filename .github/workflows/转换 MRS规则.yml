@@ -35,22 +35,45 @@ jobs:
           # 创建输出目录
           mkdir -p ./mrs/
           
+      - name: Validate and clean yaml files
+        run: |
+          # 检查并清理yaml文件中的空规则
+          for yaml_file in ./yaml/*.yaml; do
+            if [ -f "$yaml_file" ]; then
+              echo "Validating $yaml_file"
+              # 移除可能存在的空规则和无效域名
+              # 移除域名末尾的点
+              sed -i 's/\.$//' "$yaml_file"
+              # 移除空行和只有空格的行
+              sed -i '/^[[:space:]]*$/d' "$yaml_file"
+              # 移除可能为空的规则
+              sed -i '/^-[[:space:]]*$/d' "$yaml_file"
+            fi
+          done
+          
       - name: Convert yaml files to mrs
         run: |
-          # 转换所有.yaml文件
+          # 转换所有.yaml文件，跳过有问题的文件
           for yaml_file in ./yaml/*.yaml; do
             if [ -f "$yaml_file" ]; then
               filename=$(basename "$yaml_file" .yaml)
               output_file="./mrs/${filename}.mrs"
               echo "Converting $yaml_file to $output_file"
-              ./mihomo convert-ruleset domain yaml "$yaml_file" "$output_file"
+              # 使用超时和错误处理
+              if timeout 30s ./mihomo convert-ruleset domain yaml "$yaml_file" "$output_file"; then
+                echo "Successfully converted $yaml_file"
+              else
+                echo "Failed to convert $yaml_file, skipping..."
+                # 删除可能生成的不完整文件
+                rm -f "$output_file"
+              fi
             fi
           done
           
       - name: List generated mrs files and create release body
         run: |
           echo "生成的文件列表:"
-          ls -la ./mrs/
+          ls -la ./mrs/ || echo "No mrs files generated"
           
           # 创建 release body 文件
           cat > release_body.md << EOF
@@ -62,13 +85,20 @@ jobs:
           EOF
           
           # 添加文件列表到 release body
-          for file in ./mrs/*.mrs; do
-            if [ -f "$file" ]; then
-              echo "- $(basename "$file")" >> release_body.md
-            fi
-          done
+          if [ -d "./mrs" ]; then
+            for file in ./mrs/*.mrs; do
+              if [ -f "$file" ]; then
+                echo "- $(basename "$file")" >> release_body.md
+              fi
+            done
+          else
+            echo "- 无文件生成（转换失败）" >> release_body.md
+          fi
+          
+          echo -e "\n注意：某些文件可能因格式问题转换失败，请检查yaml文件格式。" >> release_body.md
           
       - name: Create or update release
+        if: success() || failure()  # 即使部分失败也创建release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ruleset-latest
@@ -79,15 +109,20 @@ jobs:
           prerelease: false
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true  # 即使没有文件也继续
           
       - name: Commit and push generated rulesets
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add ./mrs/
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
+          if [ -d "./mrs" ] && [ "$(ls -A ./mrs/ 2>/dev/null)" ]; then
+            git add ./mrs/
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+            else
+              git commit -m "Auto convert yaml ruleset to mrs ruleset - ${{ env.update_time }}"
+              git push origin main
+            fi
           else
-            git commit -m "Auto convert yaml ruleset to mrs ruleset - ${{ env.update_time }}"
-            git push origin main
+            echo "No mrs files to commit"
           fi

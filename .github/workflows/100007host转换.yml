@@ -20,16 +20,16 @@ jobs:
 
     - name: Download hosts file
       run: |
-        curl -s https://raw.githubusercontent.com/lingeringsound/10007/main/all > hosts/raw_hosts.txt
+        curl -s https://raw.githubusercontent.com/lingeringsound/10007/main/all > hosts/10007hosts.txt
 
     - name: Process and convert hosts
       run: |
         # 提取0.0.0.0开头的行并转换为YAML格式
-        grep '^0\.0\.0\.0' hosts/raw_hosts.txt | \
-        awk '{print "  - "$2}' > yaml/mihomo_rules.yaml
+        grep '^0\.0\.0\.0' hosts/10007hosts.txt | \
+        awk '{print "  - "$2}' > yaml/10007hosts.yaml
         
         # 添加YAML文件头
-        echo "payload:" | cat - yaml/mihomo_rules.yaml > temp && mv temp yaml/10007host.yaml
+        echo "payload:" | cat - yaml/10007hosts.yaml > temp && mv temp yaml/10007host.yaml
 
     - name: Commit changes
       run: |

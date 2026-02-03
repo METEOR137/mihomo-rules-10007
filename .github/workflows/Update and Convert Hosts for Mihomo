@@ -1,0 +1,139 @@
+name: Update and Convert Hosts for Mihomo
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天UTC时间00:00运行
+  workflow_dispatch:     # 允许手动触发
+
+env:
+  MIHOMO_VERSION: "v1.19.15"
+
+jobs:
+  process-and-convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取完整历史，避免后续git操作问题
+
+    - name: Set current datetime
+      run: echo "update_time=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S UTC+8')" >> $GITHUB_ENV
+
+    - name: Create directories
+      run: |
+        mkdir -p hosts
+        mkdir -p yaml
+        mkdir -p mrs
+
+    - name: Download hosts file
+      run: |
+        curl -s https://raw.githubusercontent.com/lingeringsound/10007/main/all > hosts/10007hosts.txt
+
+    - name: Process and convert hosts
+      run: |
+        # 提取0.0.0.0开头的行并转换为YAML格式
+        grep '^0\.0\.0\.0' hosts/10007hosts.txt | \
+        awk '{print "  - "$2}' > yaml/10007hosts.yaml
+        
+        # 添加YAML文件头
+        echo "payload:" | cat - yaml/10007hosts.yaml > temp && mv temp yaml/10007hosts.yaml
+
+    - name: Download and setup mihomo
+      run: |
+        # 下载并解压mihomo
+        curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-v3-${{ env.MIHOMO_VERSION }}.gz
+        gzip -d mihomo.gz
+        chmod +x ./mihomo
+
+    - name: Validate and clean yaml files
+      run: |
+        # 检查并清理yaml文件中的空规则
+        for yaml_file in ./yaml/*.yaml; do
+          if [ -f "$yaml_file" ]; then
+            echo "Validating $yaml_file"
+            # 移除域名末尾的点
+            sed -i 's/\.$//' "$yaml_file"
+            # 移除空行和只有空格的行
+            sed -i '/^[[:space:]]*$/d' "$yaml_file"
+            # 移除可能为空的规则
+            sed -i '/^-[[:space:]]*$/d' "$yaml_file"
+          fi
+        done
+
+    - name: Convert yaml files to mrs
+      run: |
+        # 转换所有.yaml文件，跳过有问题的文件
+        for yaml_file in ./yaml/*.yaml; do
+          if [ -f "$yaml_file" ]; then
+            filename=$(basename "$yaml_file" .yaml)
+            output_file="./mrs/${filename}.mrs"
+            echo "Converting $yaml_file to $output_file"
+            # 使用超时和错误处理
+            if timeout 30s ./mihomo convert-ruleset domain yaml "$yaml_file" "$output_file"; then
+              echo "Successfully converted $yaml_file"
+            else
+              echo "Failed to convert $yaml_file, skipping..."
+              # 删除可能生成的不完整文件
+              rm -f "$output_file"
+            fi
+          fi
+        done
+
+    - name: List generated mrs files and create release body
+      run: |
+        echo "生成的文件列表:"
+        ls -la ./mrs/ || echo "No mrs files generated"
+        
+        # 创建 release body 文件
+        cat > release_body.md << EOF
+        自动转换自定义的yaml格式规则集到mrs格式规则集
+        生成时间: ${{ env.update_time }}
+        
+        包含以下规则集文件:
+        
+        EOF
+        
+        # 添加文件列表到 release body
+        if [ -d "./mrs" ]; then
+          for file in ./mrs/*.mrs; do
+            if [ -f "$file" ]; then
+              echo "- $(basename "$file")" >> release_body.md
+            fi
+          done
+        else
+          echo "- 无文件生成（转换失败）" >> release_body.md
+        fi
+        
+        echo -e "\n注意：某些文件可能因格式问题转换失败，请检查yaml文件格式。" >> release_body.md
+
+    - name: Create or update release
+      if: success() || failure()  # 即使部分失败也创建release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ruleset-latest
+        name: "Custom Mihomo Ruleset"
+        body_path: release_body.md
+        files: ./mrs/*
+        draft: false
+        prerelease: false
+      env:
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      continue-on-error: true  # 即使没有文件也继续
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        
+        # 只添加yaml和mrs目录
+        git add yaml/ mrs/
+        
+        # 检查是否有更改
+        if git diff --staged --quiet; then
+          echo "无变化无需提交"
+        else
+          git commit -m "自动更新mihomo规则并转换 [skip ci]"
+          git push
+        fi

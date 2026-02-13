@@ -1,139 +1,138 @@
-name: 更新并转换规则
-
+name: 更新并转换规则集
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天UTC时间00:00运行
-  workflow_dispatch:     # 允许手动触发
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 env:
   MIHOMO_VERSION: "v1.19.15"
+  TZ: "Asia/Shanghai"
 
 jobs:
   process-and-convert:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0  # 获取完整历史，避免后续git操作问题
+      - name: 检出代码
+        uses: actions/checkout@v4
 
-    - name: Set current datetime
-      run: echo "update_time=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S UTC+8')" >> $GITHUB_ENV
+      - name: 创建目录结构
+        run: |
+          mkdir -p {hosts,yaml,mrs,logs}
 
-    - name: 创建目录
-      run: |
-        mkdir -p hosts
-        mkdir -p yaml
-        mkdir -p mrs
+      - name: 下载hosts源文件
+        run: |
+          curl -fLsS -o hosts/10007hosts.txt \
+            https://raw.githubusercontent.com/lingeringsound/10007/main/all
+        continue-on-error: false
 
-    - name: 下载hosts
-      run: |
-        curl -s https://raw.githubusercontent.com/lingeringsound/10007/main/all > hosts/10007hosts.txt
-
-    - name: 提取host规则
-      run: |
-        # 提取0.0.0.0开头的行并转换为YAML格式
-        grep '^0\.0\.0\.0' hosts/10007hosts.txt | \
-        awk '{print "  - "$2}' > yaml/10007hosts.yaml
-        
-        # 添加YAML文件头
-        echo "payload:" | cat - yaml/10007hosts.yaml > temp && mv temp yaml/10007hosts.yaml
-
-    - name: 下载并解压mihomo
-      run: |
-        # 下载并解压mihomo
-        curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-v3-${{ env.MIHOMO_VERSION }}.gz
-        gzip -d mihomo.gz
-        chmod +x ./mihomo
-
-    - name: 清理注释
-      run: |
-        # 检查并清理yaml文件中的空规则
-        for yaml_file in ./yaml/*.yaml; do
-          if [ -f "$yaml_file" ]; then
-            echo "Validating $yaml_file"
-            # 移除域名末尾的点
-            sed -i 's/\.$//' "$yaml_file"
-            # 移除空行和只有空格的行
-            sed -i '/^[[:space:]]*$/d' "$yaml_file"
-            # 移除可能为空的规则
-            sed -i '/^-[[:space:]]*$/d' "$yaml_file"
+      - name: 转换hosts为YAML格式
+        run: |
+          {
+            echo "payload:"
+            grep '^0\.0\.0\.0' hosts/10007hosts.txt | \
+            awk '{gsub(/\.$/, "", $2); print "  - "$2}' | \
+            sed '/^[[:space:]]*-[[:space:]]*$/d'
+          } > yaml/10007hosts.yaml
+          
+          if [ ! -s yaml/10007hosts.yaml ]; then
+            echo "错误：YAML文件为空，可能无有效规则"
+            exit 1
           fi
-        done
 
-    - name: 转换成mrs
-      run: |
-        # 转换所有.yaml文件，跳过有问题的文件
-        for yaml_file in ./yaml/*.yaml; do
-          if [ -f "$yaml_file" ]; then
-            filename=$(basename "$yaml_file" .yaml)
-            output_file="./mrs/${filename}.mrs"
-            echo "Converting $yaml_file to $output_file"
-            # 使用超时和错误处理
-            if timeout 30s ./mihomo convert-ruleset domain yaml "$yaml_file" "$output_file"; then
-              echo "Successfully converted $yaml_file"
+      - name: 下载mihomo转换工具
+        run: |
+          MI_URL="https://github.com/MetaCubeX/mihomo/releases/download"
+          MI_FILE="mihomo-linux-amd64-v3-${MIHOMO_VERSION}"
+          
+          curl -fLsS -o ${MI_FILE}.gz \
+            ${MI_URL}/${MIHOMO_VERSION}/${MI_FILE}.gz
+          
+          gzip -d ${MI_FILE}.gz && chmod +x ${MI_FILE}
+          mv ${MI_FILE} mihomo
+          
+          if ! ./mihomo --version; then
+            echo "mihomo验证失败"
+            exit 1
+          fi
+
+      - name: 执行规则集转换
+        run: |
+          success_count=0
+          fail_count=0
+          
+          for yaml_file in yaml/*.yaml; do
+            base_name=$(basename "$yaml_file" .yaml)
+            output_file="mrs/${base_name}.mrs"
+            
+            echo "正在转换: ${yaml_file}"
+            
+            if ./mihomo convert-ruleset domain yaml "${yaml_file}" "${output_file}" 2>>logs/convert.log; then
+              if [ -s "${output_file}" ]; then
+                echo "✓ 成功生成: ${output_file}"
+                ((success_count++))
+              else
+                echo "⚠ 生成文件为空，跳过"
+                rm -f "${output_file}"
+                ((fail_count++))
+              fi
             else
-              echo "Failed to convert $yaml_file, skipping..."
-              # 删除可能生成的不完整文件
-              rm -f "$output_file"
-            fi
-          fi
-        done
-
-    - name: 生成文件
-      run: |
-        echo "生成的文件列表:"
-        ls -la ./mrs/ || echo "No mrs files generated"
-        
-        # 创建 release body 文件
-        cat > release_body.md << EOF
-        自动转换自定义的yaml格式规则集到mrs格式规则集
-        生成时间: ${{ env.update_time }}
-        
-        包含以下规则集文件:
-        
-        EOF
-        
-        # 添加文件列表到 release body
-        if [ -d "./mrs" ]; then
-          for file in ./mrs/*.mrs; do
-            if [ -f "$file" ]; then
-              echo "- $(basename "$file")" >> release_body.md
+              echo "✗ 转换失败: ${yaml_file}"
+              ((fail_count++))
             fi
           done
-        else
-          echo "- 无文件生成（转换失败）" >> release_body.md
-        fi
-        
-        echo -e "\n注意：某些文件可能因格式问题转换失败，请检查yaml文件格式。" >> release_body.md
+          
+          echo "转换完成: ${success_count} 成功, ${fail_count} 失败"
+          
+          if [ ${success_count} -eq 0 ]; then
+            echo "无成功转换文件，任务终止"
+            exit 1
+          fi
 
-    - name: 版本发布
-      if: success() || failure()  # 即使部分失败也创建release
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: ruleset-latest
-        name: "10007.mrs"
-        body_path: release_body.md
-        files: ./mrs/*
-        draft: false
-        prerelease: false
-      env:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      continue-on-error: true  # 即使没有文件也继续
+      - name: 准备发布内容
+        run: |
+          CURRENT_TIME=$(date +'%Y-%m-%d %H:%M:%S')
+          
+          cat > release_body.md <<EOF
+          规则集自动转换结果
+          生成时间: ${CURRENT_TIME}
+          
+          包含文件:
+          EOF
+          
+          for mrs_file in mrs/*.mrs; do
+            if [ -f "${mrs_file}" ]; then
+              echo "- $(basename "${mrs_file}")" >> release_body.md
+            fi
+          done
+          
+          if [ -f "logs/convert.log" ]; then
+            echo -e "\n转换日志摘要:" >> release_body.md
+            tail -20 logs/convert.log | sed 's/^/  /' >> release_body.md
+          fi
 
-    - name: 推送
-      run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'actions@github.com'
-        
-        # 只添加yaml和mrs目录
-        git add yaml/ mrs/
-        
-        # 检查是否有更改
-        if git diff --staged --quiet; then
-          echo "无变化无需提交"
-        else
-          git commit -m "自动更新mihomo规则并转换 [skip ci]"
-          git push
-        fi
+      - name: 创建版本发布
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ruleset-$(date +%Y%m%d-%H%M)
+          name: "规则集 $(date +%Y-%m-%d)"
+          body_path: release_body.md
+          files: mrs/*.mrs
+          draft: false
+          prerelease: false
+          fail_on_unmatched_files: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 提交变更到仓库
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          git add yaml/ mrs/ logs/
+          
+          if git diff --cached --quiet; then
+            echo "无变更需要提交"
+          else
+            git commit -m "自动更新规则集 [$(date +%Y%m%d)]"
+            git push
+          fi

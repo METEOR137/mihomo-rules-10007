@@ -1,4 +1,4 @@
-name: Update and Convert Hosts for Mihomo
+name: 更新并转换规则
 
 on:
   schedule:
@@ -21,17 +21,17 @@ jobs:
     - name: Set current datetime
       run: echo "update_time=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S UTC+8')" >> $GITHUB_ENV
 
-    - name: Create directories
+    - name: 创建目录
       run: |
         mkdir -p hosts
         mkdir -p yaml
         mkdir -p mrs
 
-    - name: Download hosts file
+    - name: 下载hosts
       run: |
         curl -s https://raw.githubusercontent.com/lingeringsound/10007/main/all > hosts/10007hosts.txt
 
-    - name: Process and convert hosts
+    - name: 提取host规则
       run: |
         # 提取0.0.0.0开头的行并转换为YAML格式
         grep '^0\.0\.0\.0' hosts/10007hosts.txt | \
@@ -40,14 +40,14 @@ jobs:
         # 添加YAML文件头
         echo "payload:" | cat - yaml/10007hosts.yaml > temp && mv temp yaml/10007hosts.yaml
 
-    - name: Download and setup mihomo
+    - name: 下载并解压mihomo
       run: |
         # 下载并解压mihomo
         curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-v3-${{ env.MIHOMO_VERSION }}.gz
         gzip -d mihomo.gz
         chmod +x ./mihomo
 
-    - name: Validate and clean yaml files
+    - name: 清理注释
       run: |
         # 检查并清理yaml文件中的空规则
         for yaml_file in ./yaml/*.yaml; do
@@ -62,7 +62,7 @@ jobs:
           fi
         done
 
-    - name: Convert yaml files to mrs
+    - name: 转换成mrs
       run: |
         # 转换所有.yaml文件，跳过有问题的文件
         for yaml_file in ./yaml/*.yaml; do
@@ -81,7 +81,7 @@ jobs:
           fi
         done
 
-    - name: List generated mrs files and create release body
+    - name: 生成文件
       run: |
         echo "生成的文件列表:"
         ls -la ./mrs/ || echo "No mrs files generated"
@@ -108,12 +108,12 @@ jobs:
         
         echo -e "\n注意：某些文件可能因格式问题转换失败，请检查yaml文件格式。" >> release_body.md
 
-    - name: Create or update release
+    - name: 版本发布
       if: success() || failure()  # 即使部分失败也创建release
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ruleset-latest
-        name: "Custom Mihomo Ruleset"
+        name: "10007.mrs"
         body_path: release_body.md
         files: ./mrs/*
         draft: false
@@ -122,7 +122,7 @@ jobs:
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
       continue-on-error: true  # 即使没有文件也继续
 
-    - name: Commit and push changes
+    - name: 推送
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'

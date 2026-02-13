@@ -39,19 +39,41 @@ jobs:
             exit 1
           fi
 
-      - name: 下载mihomo转换工具
+      - name: 下载并验证mihomo转换工具
         run: |
           MI_URL="https://github.com/MetaCubeX/mihomo/releases/download"
           MI_FILE="mihomo-linux-amd64-v3-${MIHOMO_VERSION}"
           
+          echo "下载mihomo: ${MI_URL}/${MIHOMO_VERSION}/${MI_FILE}.gz"
+          
+          # 下载并检查文件
           curl -fLsS -o ${MI_FILE}.gz \
             ${MI_URL}/${MIHOMO_VERSION}/${MI_FILE}.gz
           
-          gzip -d ${MI_FILE}.gz && chmod +x ${MI_FILE}
+          if [ ! -f "${MI_FILE}.gz" ]; then
+            echo "错误：下载失败，文件不存在"
+            exit 1
+          fi
+          
+          echo "解压文件..."
+          gzip -d ${MI_FILE}.gz
+          
+          if [ ! -f "${MI_FILE}" ]; then
+            echo "错误：解压失败，文件不存在"
+            exit 1
+          fi
+          
+          chmod +x ${MI_FILE}
           mv ${MI_FILE} mihomo
           
-          if ! ./mihomo --version; then
-            echo "mihomo验证失败"
+          echo "验证mihomo版本..."
+          # 使用正确的参数 -v 来获取版本
+          if ./mihomo -v 2>&1 | grep -q "mihomo"; then
+            echo "✓ mihomo验证成功"
+            ./mihomo -v
+          else
+            echo "错误：mihomo验证失败"
+            ./mihomo --help
             exit 1
           fi
 

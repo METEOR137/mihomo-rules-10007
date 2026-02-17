@@ -1,0 +1,129 @@
+name: 更新并转换规则
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 00:00 运行
+  workflow_dispatch:     # 允许手动触发
+
+permissions:
+  contents: write        # 必须权限，用于 push 和创建 Release
+
+env:
+  MIHOMO_VERSION: "v1.19.15"
+
+jobs:
+  process-and-convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 设置当前时间（Asia/Shanghai）
+      run: echo "update_time=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S UTC+8')" >> $GITHUB_ENV
+
+    - name: 创建目录
+      run: mkdir -p hosts yaml mrs
+
+    # ==================== 缓存 mihomo（极大减少每天下载时间） ====================
+    - name: 缓存 mihomo 二进制
+      uses: actions/cache@v4
+      with:
+        path: ./mihomo
+        key: mihomo-${{ env.MIHOMO_VERSION }}-linux-amd64-v3
+
+    - name: 下载 hosts 文件
+      run: curl -s https://raw.githubusercontent.com/lingeringsound/10007/main/all > hosts/10007hosts.txt
+
+    - name: 提取并生成 YAML 规则集
+      run: |
+        grep '^0\.0\.0\.0' hosts/10007hosts.txt | \
+        awk '{print "  - "$2}' > yaml/10007hosts.yaml
+        echo "payload:" | cat - yaml/10007hosts.yaml > temp && mv temp yaml/10007hosts.yaml
+
+    - name: 下载并解压 mihomo（仅缓存未命中时执行）
+      run: |
+        if [ ! -x ./mihomo ]; then
+          curl -L -o mihomo.gz \
+            https://github.com/MetaCubeX/mihomo/releases/download/${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-v3-${{ env.MIHOMO_VERSION }}.gz
+          gzip -d mihomo.gz
+          chmod +x ./mihomo
+          echo "mihomo 已下载并缓存"
+        else
+          echo "使用缓存的 mihomo"
+        fi
+
+    - name: 清理 YAML（移除末尾点、空行、空规则）
+      run: |
+        yaml_file="yaml/10007hosts.yaml"
+        if [ -f "$yaml_file" ]; then
+          echo "清理 $yaml_file"
+          sed -i 's/\.$//' "$yaml_file"
+          sed -i '/^[[:space:]]*$/d' "$yaml_file"
+          sed -i '/^-[[:space:]]*$/d' "$yaml_file"
+        fi
+
+    - name: 转换为 MRS 格式
+      run: |
+        yaml_file="yaml/10007hosts.yaml"
+        output_file="mrs/10007hosts.mrs"
+        if [ -f "$yaml_file" ]; then
+          echo "正在转换 → $output_file"
+          if timeout 30s ./mihomo convert-ruleset domain yaml "$yaml_file" "$output_file"; then
+            echo "✅ 转换成功"
+          else
+            echo "❌ 转换失败，跳过"
+            rm -f "$output_file"
+          fi
+        fi
+
+    - name: 生成 Release Body
+      run: |
+        echo "生成的文件列表:"
+        ls -la ./mrs/ || echo "No mrs files generated"
+
+        cat > release_body.md << EOF
+        自动转换自定义的yaml格式规则集到mrs格式规则集
+        生成时间: ${{ env.update_time }}
+
+        包含以下规则集文件:
+
+        EOF
+
+        if [ -f "./mrs/10007hosts.mrs" ]; then
+          echo "- 10007hosts.mrs" >> release_body.md
+        else
+          echo "- 无文件生成（转换失败）" >> release_body.md
+        fi
+
+        echo -e "\n注意：某些文件可能因格式问题转换失败，请检查yaml文件格式。" >> release_body.md
+
+    - name: 版本发布（ruleset-latest）
+      if: success() || failure()
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ruleset-latest
+        name: "10007.mrs"
+        body_path: release_body.md
+        files: |
+          ./mrs/*
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+      continue-on-error: true
+
+    - name: 推送 yaml/mrs 更新（仅在有变化时）
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+
+        git add yaml/ mrs/
+
+        if git diff --staged --quiet; then
+          echo "无变化，无需提交"
+        else
+          git commit -m "自动更新mihomo规则并转换 [skip ci]"
+          git push
+        fi

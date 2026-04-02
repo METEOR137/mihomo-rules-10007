@@ -1,4 +1,5 @@
 payload:
+  - 0-cafw4cuaifsvnlnjqzehy0dkssp-bidder-maxads-4.cab.gbc.criteo.com
   - 0.r.msn.com
   - 0127.adsame.com
   - 0355394ad2.4lr.fun
@@ -156,9 +157,9 @@ payload:
   - 47.97.215.55
   - 47.99.42.29
   - 480.zaloapp.ads.zdn.vn
-  - 4ad2109b.flyjasper.ca
   - 4anners.ero-advertising.com
   - 4cywq-eqnre.ads.tremorhub.com
+  - 4f.dm-euco.com
   - 4gtest.bj2cu.u3.ucweb.com
   - 5-internads-7.com
   - 5.61.55.143
@@ -166,6 +167,7 @@ payload:
   - 518e7aad77.displus.online
   - 51ads.com
   - 5490.spedads.primosearch.com
+  - 54ads.com
   - 555win.mobi
   - 5726.bapi.adsafeprotected.com
   - 58749.admaster.com.cn
@@ -182,6 +184,7 @@ payload:
   - 61.170.72.15
   - 631.dlads.cn
   - 66926e18fb422e99217bead821bfa976.groupsorlink.com
+  - 69c4f21c8ed8f25ad092332d--sunny-youtiao-11fcd4.netlify.app
   - 6ab77a3dad.com
   - 6abafad197.vouch40.one
   - 6gtest.bj2cu.u3.ucweb.com
@@ -351,7 +354,6 @@ payload:
   - ac3.msn.com
   - academic-advantage.com
   - acads.net
-  - acb-adserver.gbc.criteo.com
   - acceptable.a-ads.com
   - acceptancecrowdadvertising.com
   - access.pangolin-sdk-toutiao-b.com
@@ -383,6 +385,7 @@ payload:
   - activeqq.3g.qq.com
   - actives.youku.com
   - activity.browser.intl.miui.com
+  - acton.highroadsolution.com
   - acton.outleads.com
   - actsdk.idreamsky.com
   - acuityads.com
@@ -415,6 +418,7 @@ payload:
   - ad-balancer.net
   - ad-beta.flipboard.com
   - ad-bg.adwo.com
+  - ad-blocker-1.static-cloudflare.workers.dev
   - ad-bls-tracking.lemino.docomo.ne.jp
   - ad-brix.com
   - ad-cache.dopool.com
@@ -528,6 +532,7 @@ payload:
   - ad-sp.biz
   - ad-space.net
   - ad-specs.guoshipartners.com
+  - ad-sphereagency.site
   - ad-spire.net
   - ad-splash-tracking.hktvmall.com
   - ad-splash.hktvmall.com
@@ -548,7 +553,6 @@ payload:
   - ad-thd-east.tagdelivery.com
   - ad-track.jp
   - ad-tracker-api.luizalabs.com
-  - ad-u-list.co.za
   - ad-u.com
   - ad-union-e.ssread.cn
   - ad-up.com
@@ -560,7 +564,6 @@ payload:
   - ad-vice.biz
   - ad-virtua.net
   - ad-vortex.com
-  - ad-wheel.com
   - ad-wisteria.excite.co.jp
   - ad-x.co.uk
   - ad.103092804.com
@@ -702,6 +705,7 @@ payload:
   - ad.belleeau.jp
   - ad.bench.utorrent.com
   - ad.beritasatumedia.com
+  - ad.bestools.group
   - ad.beta.madserving.com
   - ad.bg.doubleclick.net
   - ad.bidrich.com
@@ -1359,6 +1363,7 @@ payload:
   - ad.yun.wifi8.com
   - ad.za.doubleclick.net
   - ad.zaman.com
+  - ad.zankhana.ltd
   - ad.zanox.com
   - ad.zdworks.com
   - ad.zetacx.net
@@ -1527,6 +1532,7 @@ payload:
   - ad27.checkm8.com
   - ad27digital.checkm8.com
   - ad28.checkm8.com
+  - ad28967355.7d93f9d2f5.com
   - ad28digital.checkm8.com
   - ad29.checkm8.com
   - ad29digital.checkm8.com
@@ -1601,7 +1607,6 @@ payload:
   - ad41.checkm8.com
   - ad41digital.checkm8.com
   - ad42.checkm8.com
-  - ad42309dd4.com
   - ad42digital.checkm8.com
   - ad43.checkm8.com
   - ad43digital.checkm8.com
@@ -1781,7 +1786,6 @@ payload:
   - admin-range86-229xroads.b2bmktg.com
   - admin-range87-129xroads.b2bmktg.com
   - admin.adsplay.net
-  - admin.adx-congo.com
   - admin.iad.eclick.vn
   - admin.rocoads.net
   - admin.vrumeads.com
@@ -1840,7 +1844,6 @@ payload:
   - ads-api.videy.co
   - ads-api.x.com
   - ads-api.xiaohongshu.com
-  - ads-appnexusprod.gbc.criteo.com
   - ads-backend.chaincliq.com
   - ads-bi.zenkube.com
   - ads-bid.l.doubleclick.net
@@ -1911,6 +1914,7 @@ payload:
   - ads-mediafin.adhese.com
   - ads-nrc.adhese.com
   - ads-partners.coupang.com
+  - ads-pcommerceprod.gbc.criteo.com
   - ads-pebblemedia.adhese.com
   - ads-pixiv.net
   - ads-platform.zalo.me
@@ -1920,14 +1924,20 @@ payload:
   - ads-preview.criteo.com
   - ads-preview.da.us.criteo.com
   - ads-preview.da.us.preprod.criteo.com
+  - ads-preview.da1.vip.prod.criteo.com
   - ads-preview.eu.criteo.com
-  - ads-preview.eu.gbc.criteo.com
   - ads-preview.fr3.eu.criteo.com
+  - ads-preview.fr3.vip.prod.criteo.com
   - ads-preview.jp2.as.criteo.com
+  - ads-preview.jp2.vip.prod.criteo.com
   - ads-preview.nl3.eu.criteo.com
+  - ads-preview.nl3.vip.prod.criteo.com
   - ads-preview.sg1.as.criteo.com
+  - ads-preview.sg1.vip.prod.criteo.com
   - ads-preview.us.criteo.com
   - ads-preview.us5.us.criteo.com
+  - ads-preview.us5.vip.prod.criteo.com
+  - ads-previewprod.gbc.criteo.com
   - ads-prewwwiewprod.gbc.criteo.com
   - ads-privacy-api.prd.mz.internal.unity3d.com
   - ads-pymkktt.shop
@@ -1969,7 +1979,6 @@ payload:
   - ads-uo.api.leiniao.com
   - ads-us.pictela.net
   - ads-us.tiktok.com
-  - ads-userverlua-aws-va-106.gbc.criteo.com
   - ads-ut.api.leiniao.com
   - ads-v-darwin.hulu.com
   - ads-verification-for-pay.vercel.app
@@ -2195,7 +2204,6 @@ payload:
   - ads.bikegames-eu.com
   - ads.bilauppbod.is
   - ads.bing.com
-  - ads.biohardware.com.br
   - ads.biscom.net
   - ads.bittorrent.com
   - ads.bizhut.com
@@ -2345,6 +2353,7 @@ payload:
   - ads.d21.media
   - ads.da.us.criteo.com
   - ads.da.us.preprod.criteo.com
+  - ads.da1.vip.prod.criteo.com
   - ads.dabi.ir
   - ads.dada.it
   - ads.dailycamera.com
@@ -2493,6 +2502,7 @@ payload:
   - ads.fpt.vn
   - ads.fptplay.net.vn
   - ads.fr3.eu.criteo.com
+  - ads.fr3.vip.prod.criteo.com
   - ads.fredericksburg.com
   - ads.free-to.download
   - ads.freebannertrade.com
@@ -2688,6 +2698,7 @@ payload:
   - ads.jossip.com
   - ads.jp.ap.g.valuecommerce.com
   - ads.jp2.as.criteo.com
+  - ads.jp2.vip.prod.criteo.com
   - ads.jpost.com
   - ads.juicyads.com
   - ads.justhungry.com
@@ -2800,6 +2811,7 @@ payload:
   - ads.mgnetwork.com
   - ads.miarroba.com
   - ads.mic.com
+  - ads.microsoft.com
   - ads.miidi.net
   - ads.millionairemate.com
   - ads.milliyet.cubecdn.net
@@ -2887,6 +2899,7 @@ payload:
   - ads.ninemsn.com.au
   - ads.nj.com
   - ads.nl3.eu.criteo.com
+  - ads.nl3.vip.prod.criteo.com
   - ads.nola.com
   - ads.nordichardware.com
   - ads.nordichardware.se
@@ -2931,7 +2944,6 @@ payload:
   - ads.oxyshop.cz
   - ads.oyungemisi.com
   - ads.p.veruta.com
-  - ads.page-privacy-user-protection.cfd
   - ads.panoramtech.net
   - ads.paper.li
   - ads.parrysound.com
@@ -2999,7 +3011,6 @@ payload:
   - ads.priel.co.kr
   - ads.printscr.com
   - ads.prisacom.com
-  - ads.privacy-user-protection-page.cfd
   - ads.pro-market.net
   - ads.pro-market.net.edgesuite.net
   - ads.proboards.com
@@ -3052,6 +3063,7 @@ payload:
   - ads.revenue.net
   - ads.revjet.com
   - ads.revsci.net
+  - ads.reward-hunt.com
   - ads.right-ads.com
   - ads.ripoffreport.com
   - ads.rmbl.ws
@@ -3100,6 +3112,7 @@ payload:
   - ads.sfusion.com
   - ads.sg.hu
   - ads.sg1.as.criteo.com
+  - ads.sg1.vip.prod.criteo.com
   - ads.shiftdelete.net
   - ads.shizmoo.com
   - ads.shopstyle.com
@@ -3180,7 +3193,6 @@ payload:
   - ads.supfast.net
   - ads.supplyframe.com
   - ads.support-account-use-center.cfd
-  - ads.support-business-page-acount.sbs
   - ads.support-business-page-contact.cfd
   - ads.support-page-account-manage.cfd
   - ads.supportacountmetapage.cfd
@@ -3290,8 +3302,8 @@ payload:
   - ads.us.criteo.com
   - ads.us.e-planning.net
   - ads.us5.us.criteo.com
+  - ads.us5.vip.prod.criteo.com
   - ads.usatoday.com
-  - ads.use-complaints-help-community.cfd
   - ads.use1.prod.vidible.tv
   - ads.usercash.com
   - ads.uutest.cn
@@ -3312,10 +3324,6 @@ payload:
   - ads.veloxia.com
   - ads.ventivmedia.com
   - ads.veoh.com
-  - ads.verify-account-center-business.cfd
-  - ads.verify-business-page.cfd
-  - ads.verify-page-account-business.cfd
-  - ads.verify-support-fanpage-meta.cfd
   - ads.verticalresponse.com
   - ads.verticalscope.com
   - ads.vg.no
@@ -3343,6 +3351,7 @@ payload:
   - ads.virtuopolitan.com
   - ads.vishare.vn
   - ads.vjaffiliates.com
+  - ads.vk.com
   - ads.vlr.vn
   - ads.vnhell.com
   - ads.vntsm.com
@@ -3364,7 +3373,6 @@ payload:
   - ads.wasu.tv
   - ads.watchmygf.net
   - ads.watson.ch
-  - ads.wattpadru.ru
   - ads.weather.ca
   - ads.weathercn.com
   - ads.web.de
@@ -3406,6 +3414,7 @@ payload:
   - ads.worthplaying.com
   - ads.wteam.xyz
   - ads.wwe.biz
+  - ads.x.com
   - ads.x17online.com
   - ads.xbiz.com
   - ads.xbox-scene.com
@@ -3921,7 +3930,6 @@ payload:
   - adscare.myad.vn
   - adscdn.baidu.cn
   - adscdn.baidu.com
-  - adscdn.net
   - adscdn.orbi.kr
   - adscendmedia.com
   - adscfg.togothermany.cn
@@ -3968,7 +3976,6 @@ payload:
   - adsehera.ximalaya.com
   - adselect.nuggad.net
   - adsellers.net
-  - adsemirate.com
   - adsence.sogou.com
   - adsend.de
   - adsenix.com
@@ -4039,7 +4046,6 @@ payload:
   - adserve.work
   - adserve2.tom.com
   - adserve5.nikkeibp.co.jp
-  - adserved.net
   - adserver-2.ig.com.br
   - adserver-4.ig.com.br
   - adserver-5.ig.com.br
@@ -4095,6 +4101,7 @@ payload:
   - adserver.bondage.com
   - adserver.break-even.it
   - adserver.bridgebase.com
+  - adserver.cab.gbc.criteo.com
   - adserver.cams.com
   - adserver.cantv.net
   - adserver.cdnstream.com
@@ -4188,7 +4195,6 @@ payload:
   - adserver.lostreality.com
   - adserver.lunarpages.com
   - adserver.lycos.co.jp
-  - adserver.marriagetrac.com
   - adserver.matchcraft.com
   - adserver.merc.com
   - adserver.merciless.localstars.com
@@ -4359,7 +4365,6 @@ payload:
   - adservob.com
   - adservon.com
   - adservone.com
-  - adservr.de
   - adservrs.com
   - adservrs.com.edgekey.net
   - adsession.com
@@ -4367,7 +4372,6 @@ payload:
   - adsessionserv.com
   - adsethimdown.org
   - adsettings.com
-  - adsexo.com
   - adsexse.com
   - adsfac.eu
   - adsfac.net
@@ -4532,7 +4536,6 @@ payload:
   - adsoptimal.com
   - adsorg.com
   - adsota.com
-  - adsovo.com
   - adsozai.com
   - adsp.ciner.com.tr
   - adsp.haberturk.com
@@ -4592,7 +4595,6 @@ payload:
   - adsquasher.pro
   - adsquirrel.ai
   - adsratcarp.com
-  - adsrealpublic.ru
   - adsreference.com
   - adsreklamizm.ga
   - adsreklamizm.tk
@@ -4694,6 +4696,7 @@ payload:
   - adstream.cardboardfish.com
   - adstreamer.ru
   - adstreampro.com
+  - adstub.net
   - adstuber.com
   - adstudio-assets.scdn.co
   - adstudio.cloud
@@ -4884,7 +4887,6 @@ payload:
   - advanc3d-1p-scaner.com
   - advancdsports.com
   - advance-prime.fr
-  - advanceafricandevelopment.org
   - advanced-esim.fr
   - advanced-ip-scanner.compares.bentleylacey.com
   - advanced-ip-sccanner.com
@@ -4895,6 +4897,8 @@ payload:
   - advanced.studiocorepilates.com
   - advancedadblocker.pro
   - advancedagservices.com
+  - advancedaidevelopmenthu.pro
+  - advancedailiteracy.com
   - advancedanalytics-websocket-pri-001.hexaglobe.net
   - advancedcleaner.com
   - advanceddreams.net
@@ -4915,11 +4919,9 @@ payload:
   - advancelocal.blueconic.net
   - advancementalong.com
   - advancementcircuscaptured.com
-  - advancementgreeted.com
   - advancementpains.com
   - advancenopregnancy.com
   - advancepathflow12.sbs
-  - advancestide.sbs
   - advancesurge.com
   - advanchange.presidon.com
   - advancing.acams.org
@@ -4934,7 +4936,6 @@ payload:
   - advant-connection.life
   - advantage.as
   - advantage.digitalsunray.com
-  - advantage.rsabroker.ca
   - advantageauburn.actonservice.com
   - advantagedoctrinepleased.com
   - advantagefoamllc.com
@@ -4949,6 +4950,8 @@ payload:
   - advantax-ai-2.com
   - advantax-e300-ai.com
   - advantaxe-300-ai.com
+  - advantic.webtrekk.net
+  - advantic01.webtrekk.net
   - advantmanpower.com
   - advap.fr
   - advapi.ahtv.cn
@@ -4981,6 +4984,7 @@ payload:
   - adventori.com
   - adventory.com
   - adventure-mypacere.shop
+  - adventure-sailing-croatia.com
   - adventureandnaturelife.info
   - adventuredigital.co.il
   - adventurefeeds.com
@@ -4988,7 +4992,6 @@ payload:
   - adventureisland.fr
   - adventureland.fr
   - adventureparkcostarica.com
-  - adventureperu.org
   - adventurerarmory.com
   - adventures4paws.com
   - adventuretravelandleisure.info
@@ -5085,6 +5088,7 @@ payload:
   - advertisementnl.112.2o7.net
   - advertisements.immowebapi.be
   - advertiseonbing.azureedge.net
+  - advertiser.wbtrk.net
   - advertisercommunity.com
   - advertisers.adasiaholdings.com
   - advertisers.app-shake.com
@@ -5141,6 +5145,8 @@ payload:
   - advertmedia.de
   - advertnative.com
   - advertone.ru
+  - advertor.site
+  - advertorppial.info
   - advertpay-vip-ssl.xunlei.com
   - advertpay.net
   - advertpay.ru
@@ -5189,7 +5195,6 @@ payload:
   - advisedmarketing.com
   - advisedwhenever.com
   - advisefirmly.com
-  - adviseforty.com
   - adviser.legalandgeneral.com
   - advisers.kingstonsmith.co.uk
   - adviseshakethrilled.com
@@ -5207,6 +5212,7 @@ payload:
   - advisor.pearlmeyer.com
   - advisor.raa.com
   - advisor.zacksim.com
+  - advisoracrb.space
   - advisoramazingly.com
   - advisoray.net
   - advisoray.tech
@@ -5215,10 +5221,8 @@ payload:
   - advisoriab.online
   - advisormedia.cz
   - advisors.beaconfinserv.com
-  - advisorscitron.lat
   - advisorservices.etradefinancial.com
   - advisorservicesfpc.etradefinancial.com
-  - advisorshredbonus.com
   - advisorthrowbible.com
   - advisory.benisab.se
   - advisory.mentalitedor.com
@@ -5237,15 +5241,13 @@ payload:
   - advmedialtd.com
   - advmob.cn
   - advmusic.com
-  - advnazia.net
   - advnet.xyz
   - advnn.laurageller.com
   - advnt.com
   - advoc8cy.com
   - advocacy.panfoundation.org
-  - advocacyaid-devops2.com
+  - advocard01.wt-eu02.net
   - advocate420.fun
-  - advocate4changetexas.com
   - advocateadvocate.com
   - advod.sbs.co.kr
   - advokateg.xyz
@@ -5472,13 +5474,13 @@ payload:
   - agd.p.360.cn
   - agd2.p.360.cn
   - agency.adsota.com
+  - agency002.partner-connect-marketing.com
   - agentchannel.api.duapp.com
   - agn.aty.cp45.ott.cibntv.net
   - agn.aty.snmsohu.aisee.tv
   - agn.aty.sohu.com
   - agr.voiceads.cn
   - ahadsply.com
-  - aheebacoadseech.xyz
   - ahmadsuhendro.com
   - ahn.jiankang123.net
   - ahoy-internal-ads-hv.b-cdn.net
@@ -5486,6 +5488,7 @@ payload:
   - ai.m.taobao.com
   - ai.taobao.com
   - ai.voiceads.cn
+  - aiadsoptimizerjh.pro
   - aiadvi.com
   - aiassetadvisors.com
   - aibanka.cnibk.com
@@ -5498,6 +5501,7 @@ payload:
   - airlessstereoadvised.com
   - aiseet.aa.atianqi.com
   - aizhantj.com
+  - ak-ads-ns.prisasd.com
   - ak.ad.turn.com
   - aka.ms-ads.co
   - akaads-espn.starwave.com
@@ -5541,6 +5545,7 @@ payload:
   - alleliteads.com
   - alliceadsl.fr
   - aloceadsl.fr
+  - alpen-advisor.com
   - alpha2.autoads.asia
   - alphaads.de
   - alphaapi.autoads.asia
@@ -6080,6 +6085,7 @@ payload:
   - api-p0.yksdks.com
   - api-proxy.bee7.com
   - api-public.addthis.com
+  - api-redirect-page.prudensys.com
   - api-resource.youzicheng.net
   - api-rewarded-video.fyber.com
   - api-rssocks.youzicheng.net
@@ -6087,8 +6093,6 @@ payload:
   - api-s2s.taboola.com
   - api-sdk.datadome.co
   - api-secure.solvemedia.com
-  - api-static.com
-  - api-statics.com
   - api-telemetry.servers.getgo.com
   - api-upgrade.coocaa.ottcn.com
   - api-us.appodealx.com
@@ -6316,7 +6320,6 @@ payload:
   - api.eagllwin.com
   - api.edgeoffer.microsoft.com
   - api.elliehuxtable.com
-  - api.elwajeeh.com
   - api.engager.ecbsn.com
   - api.ent.mobileanjian.com
   - api.eqmob.com
@@ -6874,7 +6877,6 @@ payload:
   - at1.doubanio.com
   - at2.doubanio.com
   - ata.ero-advertising.com
-  - atadsoalsuget.net
   - atanx.alicdn.com
   - atanx2.alicdn.com
   - athena-ads.wikia.com
@@ -7149,7 +7151,6 @@ payload:
   - beacons.digital.disneyadvertising.com
   - bead-ad.com
   - beads.sx.atl.publicus.com
-  - beadschina.com
   - beadspack.com
   - beap.adss.yahoo.com
   - beap.adx.yahoo.com
@@ -7257,6 +7258,7 @@ payload:
   - black.qimo.ink
   - black6adv.com
   - blackads.ru
+  - blackdogadvertising.actonsoftware.com
   - bladswetis.com
   - bladv.actonservice.com
   - blamads.com
@@ -7302,12 +7304,12 @@ payload:
   - books-analytics-events.apple.com
   - books-analytics-events.news.apple-dns.net
   - boomads.com
+  - boomads01.wt-eu02.net
   - boombit-api.exponea.com
   - boostads.net
   - boostingads.com
   - bootpreload.uve.weibo.com
   - bootstrap.upsight-api.com
-  - bostad.bostadscentralen.se
   - bostadslistan.se
   - bostadsportal.se
   - botuu.adsame.com
@@ -7332,11 +7334,9 @@ payload:
   - broadsexplorer.com
   - broadsheetspikesnick.com
   - broadsidedaisysanta.com
-  - broadsimp.site
   - broadspring.com
   - broadstreet.ai
   - broadstreetads.com
-  - broadsview.site
   - brodownloads.site
   - brokerreviewadvantage.top
   - brokerreviewadvisor.top
@@ -7370,8 +7370,8 @@ payload:
   - buenosairesadschool.com
   - bugly.qq.com
   - bugsee-api-prod.elasticbeanstalk.com
-  - buphagadsnames.help
   - business-ad.cdn-go.cn
+  - business-support.adserverpro.eu.cc
   - business.ads-fanpage-center.com
   - business.cleverads.vn
   - businessadversity.com
@@ -7463,7 +7463,6 @@ payload:
   - ca.clcknads.pro
   - ca.iadsdk.apple.com
   - ca4-bid.adsrvr.org
-  - cabadserver.gbc.criteo.com
   - cache.addthiscdn.com
   - cache.adm.cnzz.net
   - cache.adviva.net
@@ -7480,6 +7479,7 @@ payload:
   - cadsecs.com
   - cadsimz.com
   - cadskiz.com
+  - cadssopra.rest
   - cadstandardparts.com
   - cadsuta.net
   - cadswkyoxlcfn.site
@@ -7491,7 +7491,6 @@ payload:
   - cal.meizu.com
   - call-ad-network-api.marchex.com
   - calls.uptownleads.com
-  - camads.net
   - campads.xyz
   - campaign.ad-brix.com
   - campaign.adobe.com
@@ -7509,7 +7508,6 @@ payload:
   - capitaldownloads.net
   - carbonads.com
   - carbonads.net
-  - cards4all-api.site
   - care.advancedscare.com
   - care.help.360.cn
   - cargodisplayads.com
@@ -7635,6 +7633,7 @@ payload:
   - cdn.neppa-ad.com
   - cdn.oas-c17.adnxs.com
   - cdn.oas-c18.adnxs.com
+  - cdn.optoutadvertising.com
   - cdn.proadscdn.com
   - cdn.propellerads.com
   - cdn.puata.info
@@ -7693,7 +7692,6 @@ payload:
   - cdxninteractive.blueadvertise.com
   - ce.adsdomaintracking.com
   - ceadx.agrantsem.com
-  - ceckafoads.net
   - celeb-ads.com
   - cellfun.mobi
   - centerpostcustomer.dns.army
@@ -7733,6 +7731,7 @@ payload:
   - check-tcp.rayjump.com
   - check.cloud-too.online
   - check.go19.online
+  - check.mail-service.digital
   - check.rayjump.com
   - checker.cityads.com
   - checkinsforwads3.com
@@ -7903,7 +7902,6 @@ payload:
   - click.tianyaui.com
   - click.top10sites.com
   - click.trafikkfondet.no
-  - click.trbope.com
   - click.twcwigs.com
   - click.tz.simba.taobao.com
   - click.uamtrk.com
@@ -8030,6 +8028,7 @@ payload:
   - comms.adss.com
   - companymaster.advocatemintukumarmondal.com
   - comparison.financeads.net
+  - comunidadvalenciana.cruzroja.es
   - concertads-configs.vox-cdn.com
   - conde.adsame.com
   - conf.funshion.com
@@ -8172,6 +8171,7 @@ payload:
   - criteo-sync.teads.tv.edgekey.net
   - crm.leads360.com
   - crofttradstead-ai.fyi
+  - cropp.dm-euco.com
   - crossadsapi.ecomobileapp.com
   - crs.baidu.com
   - crypto-ads.net
@@ -8193,6 +8193,7 @@ payload:
   - cubeplum.advocatemintukumarmondal.com
   - cuisineenvoyadvertise.com
   - cupid.qiyi.com
+  - curly-union-a692.oekivevebbyaeiooampitgf.workers.dev
   - cursa.iad-03.braze.com
   - custom-wrs.api.responsys.net
   - customads.co
@@ -8258,7 +8259,9 @@ payload:
   - daaa.ero-advertising.com
   - daartads.com
   - dad-api.dcard.tw
+  - dads.barbarana.com.br
   - dads.brunovinicius.com.br
+  - dads.chamaacademy.com.br
   - dads.damie.com.br
   - dads.fosseyewear.com.br
   - dads.lojadaconexaoeletrica.com.br
@@ -8270,7 +8273,6 @@ payload:
   - dadvxlxmizmbq.website
   - daea.ero-advertising.com
   - daia.ero-advertising.com
-  - dailythreads.shop
   - dalapi.adsafeprotected.com
   - dalauth.adsafeprotected.com
   - dalci.adsafeprotected.com
@@ -8309,6 +8311,7 @@ payload:
   - data.adsrvr.org
   - data.advania.se
   - data.adventure-shop.us
+  - data.adventures-hub.com
   - data.advicecomms.aware.com.au
   - data.api.kaffnet.com
   - data.connectingthreads.com
@@ -8487,6 +8490,7 @@ payload:
   - display.xad.com
   - displayads-formats.googleusercontent.com
   - displayinterads.com
+  - disprovabbbleadvocaat.info
   - disqusads.com
   - dist.ad-stir.com
   - dist.bpc.ad-stir.com
@@ -8505,6 +8509,7 @@ payload:
   - dlglvsxadvloc.online
   - dlsdk.appsflyer.com
   - dlvr.readserver.net
+  - dm-euco.com
   - dm-hl.toutiao.com
   - dm-lq.toutiao.com
   - dm.519397.com
@@ -8561,6 +8566,7 @@ payload:
   - doubleclick.ne.jp
   - doubleclick.net
   - doublepimpads.com
+  - douglas.dm-euco.com
   - down.360.cn
   - down.apps.sina.cn
   - down.us2.mclick.mobi
@@ -8591,6 +8597,7 @@ payload:
   - download-staging.planify.io
   - download-stats.mozilla.org
   - download-ue1.pardot.com
+  - download-version.3-15-2.com
   - download.123cw.cn
   - download.2345.com
   - download.350.com
@@ -8602,6 +8609,7 @@ payload:
   - download.cdn.torchbrowser.com
   - download.changhong.upgrade2.huan.tv
   - download.coolguang.com
+  - download.digichefs.digital
   - download.doumaibiji.cn
   - download.emailorganizer.com
   - download.filmfanatic.com
@@ -8642,6 +8650,7 @@ payload:
   - downloads.mytvandmovies.com
   - downloads.pcsecurityshield.com
   - downloads.pos.fs.account.azure.on.t.instagram.cp.acbhk0.gbc.criteo.com
+  - downloadsacbhk0.gbc.criteo.com
   - downloadsafe.org
   - downloadsafe.us
   - downloadsag.gbc.criteo.com
@@ -8770,7 +8779,9 @@ payload:
   - e2.extreme-dm.com
   - e4203cbfd3.ab73ad8e50.com
   - ead-soft.popunder.ru
+  - eads-com01.webtrekk.net
   - eadsg.xyz
+  - eadsq01.wt-eu02.net
   - eadsrv.com
   - eadv.it
   - eadvance-prime.fr
@@ -8838,6 +8849,11 @@ payload:
   - email.advantages.best
   - email.ciconnectmyleads.com
   - email.headsuphealth.com
+  - email1.advisorycloud.com
+  - email2.advisorycloud.com
+  - email3.advisorycloud.com
+  - email4.advisorycloud.com
+  - email5.advisorycloud.com
   - emails.advisor2advisor.com
   - emarketing.sina.com.cn
   - embercrestadvisors.ink
@@ -8878,6 +8894,7 @@ payload:
   - equuleus.iad.appboy.com
   - eqx-secure.smartadserver.com
   - eqx.smartadserver.com
+  - erdistg.adsuccessacademy.com
   - erebor.douban.com
   - ero-advertising.com
   - eroadvertising.com
@@ -8903,22 +8920,19 @@ payload:
   - eu-ad.sam4m.com
   - eu-api.swrve.com
   - eu-internal.ads-preview.criteo.com
+  - eu-internal.ads.eu.criteo.com
   - eu-internal.rtb-teads.eu.criteo.com
   - eu-internal.ssp-ads.criteo.com
   - eu-internal.ssp-bidder-maxads-1.criteo.com
   - eu-pn2.adserver.yahoo.com
   - eu-pn4.adserver.yahoo.com
-  - eu.ads-appnexusprod.gbc.criteo.com
   - eu.ads-pcommerceprod.gbc.criteo.com
-  - eu.ads-preads-previewprodiewprod.gbc.criteo.com
   - eu.ads-preiniewprod.gbc.criteo.com
-  - eu.ads-previewprod.gbc.criteo.com
   - eu.ads-prewwwiewprod.gbc.criteo.com
   - eu.adventori.com
   - eu.event.cmp.advertising.com
   - eu.hsdkeer.com
   - eu.ssp-bidder-maaads-1prod.gbc.criteo.com
-  - eu.ssp-bidder-maxads-1prod.gbc.criteo.com
   - eu.track.digitaladsystems.com
   - eu2.madsone.com
   - euads-o.api.leiniao.com
@@ -8954,6 +8968,7 @@ payload:
   - everestads.net
   - evergreenadvisors.life
   - evergreenadvisors.mom
+  - everlight-api.com
   - everpathadvisors.life
   - evolu.adsdomaintracking.com
   - evolutionadv.it
@@ -8997,6 +9012,7 @@ payload:
   - fadskis.com
   - fadslimz.com
   - fadsoampoaksoaw.net
+  - fakadsoptimizerxy.pro
   - fam-ad.com
   - fanners.ero-advertising.com
   - fanpages.advanted-setting-help.com
@@ -9011,7 +9027,6 @@ payload:
   - fasts-downloads.com
   - fata.ero-advertising.com
   - fav.simba.taobao.com
-  - fbofferads.com
   - fc.adswt.com
   - fcanr.tracking.miui.com
   - fcb8.mobi
@@ -9063,6 +9078,7 @@ payload:
   - filter.adsfloow.net
   - filter.adsparkmedia.net
   - filter.adsupplyexchange.com
+  - filter.advertoix.com
   - filter.adverttise.com
   - filter.adzestoads.xyz
   - filter.bappaads.com
@@ -9096,6 +9112,7 @@ payload:
   - flagads.net
   - flairads.com
   - flairadscpc.com
+  - flash-offer-hub.it.com
   - flash.cn
   - flash.quantserve.com
   - flash.shanxienergy.com
@@ -9108,6 +9125,7 @@ payload:
   - flex.msn.com
   - flimsyheadstone.com
   - floatingads.madisonavenue.com
+  - flow.growmyads.com
   - flower-ads.com
   - fls-eu.amazon-adsystem.com
   - fls-fe.amazon-adsystem.com
@@ -9151,15 +9169,12 @@ payload:
   - fpa.ero-advertising.com
   - fpadserver.com
   - fr.adserver.yahoo.com
-  - fr.eu.ads-pcommerceprod.gbc.criteo.com
-  - fr.eu.ads-preads-previewprodiewprod.gbc.criteo.com
   - fr.eu.ads-preiniewprod.gbc.criteo.com
-  - fr.eu.ssp-bidder-maaads-1prod.gbc.criteo.com
+  - fr.eu.ads-previewprod.gbc.criteo.com
+  - fr.eu.ads-prewwwiewprod.gbc.criteo.com
   - fr.rtb-rubicon-1.ads-previewprod.gbc.criteo.com
-  - fr.rtb-rubicon-1.ads-userverlua-aws-va-106.gbc.criteo.com
   - fra1-ib.adnxs-simple.com
   - francecadstre.fr
-  - frank-advantage-131766.framer.app
   - freakads.com
   - free-ebookdownloads.com
   - free247downloads.com
@@ -9172,6 +9187,7 @@ payload:
   - frontier-toutiao.snssdk.com
   - frontier100-toutiao-hl.fqnovel.com
   - frontier100-toutiao-lf.fqnovel.com
+  - frontrange36-129xroads.b2bmktg.com
   - frontrange86-129xroads.b2bmktg.com
   - frontstat.agrantsem.com
   - fronttoad.com
@@ -9262,12 +9278,12 @@ payload:
   - gamesiteads.com
   - gamigoads.com
   - gan.doubleclick.net
-  - gaphoadsu.com
   - gaqfzadvpkxiu.website
   - gas.data.pplive.com
   - gaslitads.com
   - gaspra.iad-03.braze.com
   - gata.ero-advertising.com
+  - gateway-check.info
   - gateway.ttpsdk.info
   - gateway.unityads.unity3d.com
   - gatorleads.co.uk
@@ -9444,6 +9460,12 @@ payload:
   - google-docs.org
   - google-shopping-v2.sapoapps.vn
   - google-shopping.sapoapps.vn
+  - google.check-mail.digital
+  - google.check-service.digital
+  - google.checkmy.world
+  - google.crosscheck.world
+  - google.mail-check.digital
+  - google.mail-service.digital
   - googleads-cn.com
   - googleads.com
   - googleads.g.doubleclick-cn.net
@@ -9497,6 +9519,7 @@ payload:
   - gtm.advogadaanapaulabrito.com.br
   - gtm.amorimadvogadosassociados.com
   - gtm.atins4x4adventure.com.br
+  - gtm.badsheepyarn.com
   - gtm.bandsoffads.com
   - gtm.bcwadvogados.com.br
   - gtm.bresseradvogados.com.br
@@ -9509,8 +9532,10 @@ payload:
   - gtm.hwrocha.adv.br
   - gtm.igfadvogados.com.br
   - gtm.kb99ads.xyz
+  - gtm.kios-77ads.org
   - gtm.kios77-adscr.org
   - gtm.lopeseribeiroadv.com.br
+  - gtm.meme-128ads.org
   - gtm.meme128-adscr.org
   - gtm.momo128ads.xyz
   - gtm.pablomendesadv.com
@@ -9686,6 +9711,7 @@ payload:
   - hqs4.cnzz.com
   - hqs7.cnzz.com
   - hqs9.cnzz.com
+  - hragents.nadqa.nadsoft.co
   - hs-analytics.net
   - hs-banner.com
   - hsadspixel.net
@@ -9980,6 +10006,7 @@ payload:
   - info.ads.roku.com
   - info.adsmanager.paramount.com
   - info.adspruce.com
+  - info.adss.com
   - info.advanced-energy.com
   - info.advantageind.com
   - info.advantageman.com
@@ -10016,7 +10043,6 @@ payload:
   - inpost-pl.check-buy1298.shop
   - inpostlogistyka.dns.army
   - inpostsecure.dns.army
-  - inreads.com
   - insight.adsrvr.org
   - insight.leads360.com
   - insight.ucweb.com
@@ -10074,6 +10100,7 @@ payload:
   - iqiyi.irs01.com
   - iqiyi.kim
   - iqiyi.m.cn.miaozhen.com
+  - iqrt.searchadvertising.it
   - iqzn-useast.adnxs.com
   - ir-de.amazon-adsystem.com
   - ir-jp.amazon-adsystem.com
@@ -10087,7 +10114,6 @@ payload:
   - ironbrookadvisors.mom
   - irpmt.mail.163.com
   - irs01.youku.com
-  - irsfadvocacy.org
   - is-gateway.supersonicads.com
   - is-tracking-pixel-api-prod.appspot.com
   - isdhflijsdk.top
@@ -10244,6 +10270,7 @@ payload:
   - justwebads.com
   - juxiao.adsmogo.net
   - juxiao.mediav.com
+  - jysk.dm-euco.com
   - jzwjq.ads.tremorhub.com
   - k.tcp.push.mob.com
   - k1.mobileadsserver.com
@@ -10252,6 +10279,7 @@ payload:
   - kaanbabaads.net
   - kadmimage.biz.weibo.com
   - kajads.com
+  - katz.adv.br
   - kcgtt.nagelglads.com
   - kd.api.agrantsem.com
   - kde.qq.com
@@ -10306,7 +10334,6 @@ payload:
   - l.tcp.push.mob.com
   - l2.l.qq.com
   - l6urqh27.sina.cn
-  - la-pan-adventures.com
   - labs3.adserve.zone
   - lacerta.iad-03.appboy.com
   - lacerta.iad.appboy.com
@@ -10330,7 +10357,6 @@ payload:
   - lanzouz.com
   - lap-click.tr.line.me
   - latam.adspecs.yahoo.com
-  - latemadsouth.mypi.co
   - launch.adserver.yahoo.com
   - lax1-ib.adnxs.com
   - layer-ad.de
@@ -10440,6 +10466,7 @@ payload:
   - lgxtao.aheads.co.kr
   - lh3.googleadsserving.cn
   - lianmengapi.snssdk.com
+  - liarrnnetreads.info
   - lib.wtg-ads.com
   - liberty.gedads.com
   - libs.aseads.com
@@ -10461,14 +10488,12 @@ payload:
   - linkads.me
   - linkedads.de
   - linker.adsee.jp
-  - linklensadvisors.com
   - links-and-traffic.com
   - links.info.headspace.com
   - links.notifications.headspace.com
   - links.onlinedownloads.org
   - liny-ads.net
   - lionheadsl.com
-  - lis-update.appwrite.network
   - lisads.d2c.ne.jp
   - list-ads.com
   - litchiads.com
@@ -10492,6 +10517,7 @@ payload:
   - lives.l.qq.com
   - lixaja.trackadspulse.com
   - llogin-mail-update-verif.articulturalland.com
+  - llsdkj.com
   - lmadvertising.engine.adglare.net
   - lnads.osdn.com
   - lnpost-pl.check-buy1215.shop
@@ -10505,24 +10531,24 @@ payload:
   - lnpost-pl.check-buy1323.shop
   - lnpost-pl.check-buy1408.shop
   - lnpost.adsfjaksdf435.cfd
-  - lnpost.sdafjkadsf345.cfd
+  - lnternet-cliente.bmsadv.site
   - load.ads.themens.com.br
   - load.ads.ulti188capi.com
   - load.ads.ulti700capi.com
   - load.bbr.byads.co
+  - load.btpe.byads.co
   - load.collect.fzadvocaten.nl
   - load.dads.ullasportsbeachwear.com
-  - load.erdistg.adsuccessacademy.com
   - load.first.nomadsocks.de
   - load.g.byads.co
   - load.gtm.adsimpact.nl
   - load.gtm.advanpure.com
-  - load.gtm.badsheepyarn.com
   - load.gtm.esadvocacia.adv.br
   - load.gtm.jesadvocacia.com.br
   - load.i.adspaceagency.com
   - load.instinctiveads.com
   - load.leads.bivs.com
+  - load.leads.bmg360.com
   - load.loadscript.mausa.org
   - load.louisxe.mayararodriguesprev.adv.br
   - load.lpt.selfcustodyadvisor.com
@@ -10610,6 +10636,7 @@ payload:
   - m.atm.youku.com
   - m.aty.cp45.ott.cibntv.net
   - m.aty.sohu.com
+  - m.badsquash.co.uk
   - m.beacon.sina.com.cn
   - m.cityads.com
   - m.clkservice.youdao.com
@@ -10618,6 +10645,7 @@ payload:
   - m.doubleclick.net
   - m.game.weibo.cn
   - m.hot-mob.com
+  - m.hy-union.com
   - m.meta-dm.com
   - m.mixadvert.com
   - m.one.impact-ad.jp
@@ -10888,6 +10916,7 @@ payload:
   - metrics.homeadvisor.com
   - metrics.mastercardadvisors.com
   - metrics.morningadvertiser.co.uk
+  - metrics.rapidadvance.com
   - metrics.staplesadvantage.com
   - metrics.veryfunnyads.com
   - metrics.wildadventures.com
@@ -11049,7 +11078,6 @@ payload:
   - mores.toponad.com
   - mortgage.leads360.com
   - mostat.wps.cn
-  - motorcomm.adsdrover.com
   - motu.p4p.sina.com.cn
   - mou.niu.xunlei.com
   - mouads.com
@@ -11320,6 +11348,7 @@ payload:
   - northrtbads.top
   - northwaveadvisors.live
   - northwaveadvisors.mom
+  - notebooklm-download.squarespace.com
   - notepad2.com
   - notes-analytics-events.apple.com
   - noti-eu.adsmoloco.com
@@ -11413,7 +11442,6 @@ payload:
   - offers.propellerads.com
   - offerstimeads.com
   - offerwall.yandex.net
-  - office.hadspemquarry.com
   - office365-eu-update.com
   - office365-us-update.com
   - offline-adv.oray.com
@@ -11558,6 +11586,8 @@ payload:
   - ouplog.umeng.com
   - ouradventuresfromhome.com
   - ourtecads.com
+  - ourtxhillcountryadventures.com
+  - ourwacoadventure.com
   - out.popads.net
   - out1.cityads.com
   - out2.cityads.com
@@ -11570,6 +11600,7 @@ payload:
   - outcome.supersonicads.com
   - outdooradventures.monster
   - outlookads.live.com
+  - overadveoortiseddeadbeat.info
   - overflow.adsoftware.com
   - ow-gateway.supersonicads.com
   - owads.audioadx.com
@@ -11843,6 +11874,7 @@ payload:
   - p9-orange.byteorge.com
   - paa-reporting-advertising.amazon
   - paas-push-api.immomo.com
+  - paczkapost.skdfosdkfo342.cyou
   - pad-v3.presage.io
   - pad.zhywyl.cn
   - padsabs.com
@@ -11900,7 +11932,6 @@ payload:
   - papayads.net
   - papi.mynativeads.com
   - pardot.eblireads.com
-  - pardot.healthadvocate.com
   - partner-ads.com
   - partner-api.jobbio.com
   - partner-ts.groupon.be
@@ -11932,6 +11963,7 @@ payload:
   - pata.ero-advertising.com
   - pawads.midtc.com
   - pay.iagadvanced.com
+  - payment.ads-program-agency.com
   - paypalssl.doubleclick.net
   - payperclickadvertising.org.uk
   - pb.adsparc.net
@@ -12033,7 +12065,6 @@ payload:
   - pic2.bloggerads.net
   - pica-ad-api.diwodiwo.xyz
   - piccdn.bloggerads.net
-  - pickadvanced.lat
   - picture-uploads.com
   - pigment-adv.co.il
   - pilipali.cc
@@ -12061,12 +12092,12 @@ payload:
   - pixel.moatads.com
   - pixeladszone.top
   - pixels.ad.gt
+  - pixilatwwingadvisableness.info
   - pixiu.shangshufang.ksosoft.com
   - pixon.ads-pixiv.net
   - pkbjr.wildthreadsco.com
   - pkg.sinaimg.cn
   - pkg.toponad.com
-  - pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
   - pl.ads.justpremium.com
   - pl.cp12.wasu.tv
   - pl.relevance.enzymeadvisinggroup.com
@@ -12078,7 +12109,6 @@ payload:
   - platform-api.sharethis.com
   - platform.adcannyads.com
   - platform.artilleryads.com
-  - platinum-advisiors.org
   - play.adsparc.com
   - play.sunmediaads.com
   - playbuzzmm.ads.tremorhub.com
@@ -12234,6 +12264,7 @@ payload:
   - proxy.ads.canalplus-bo.net
   - proxy.advp.apple.com
   - proxy.optoutadserving.com
+  - proxy.optoutadvertising.com
   - prplads.com
   - prt-stsdk.vivo.com.cn
   - prt.stsdk.vivo.com.cn
@@ -12385,10 +12416,10 @@ payload:
   - rampidads.com
   - randomadsrv.com
   - range16-127xroads.b2bmktg.com
+  - range16-129xroads.b2bmktg.com
   - range56-129xroads.b2bmktg.com
   - range82-128xroads.b2bmktg.com
   - range85-122xroads.b2bmktg.com
-  - range86-029xroads.b2bmktg.com
   - range86-118xroads.b2bmktg.com
   - range86-122xroads.b2bmktg.com
   - range86-126xroads.b2bmktg.com
@@ -12495,6 +12526,7 @@ payload:
   - relevance.enzymeadvisinggroup.com
   - relevanceads.com
   - reliabledownloads.org
+  - reloadshareservices.com
   - reloadsusa.com
   - rememberineffectiveadvisedly.com
   - remove-ads.xyz
@@ -12583,10 +12615,10 @@ payload:
   - roadadventures.info
   - roadsecond.gridgrab.com
   - roadsinfo.com
-  - roadslime.cyou
   - roadstupidsupporter.com
   - robesadvertisement.com
   - rocoads.com
+  - rodriguesebosi.adv.br
   - roimedia.advertserve.com
   - rosangelarochaadvocacia.com.br
   - rotanev.iad-03.braze.com
@@ -12609,6 +12641,7 @@ payload:
   - rtb-adsterra.flshtrk.store
   - rtb-apac-v4.adscholars.com
   - rtb-apac-v4.adsudo.com
+  - rtb-apac-v4.adxpoint-ad.com
   - rtb-apac-v4.epikads.com
   - rtb-apac-v4.hueadsortb.com
   - rtb-apac-v4.monetixads.com
@@ -12643,7 +12676,6 @@ payload:
   - rtb-eu.rtbflairads.com
   - rtb-eu.santaads.com
   - rtb-eu.wxadserve.xyz
-  - rtb-rubicon-1.ads-previewprod.gbc.criteo.com
   - rtb-rubicon-1.ads-userverlua-aws-va-106.gbc.criteo.com
   - rtb-rubicon-cyaniteproxy-gce-sc-3.ads-previewprod.gbc.criteo.com
   - rtb-teads.criteo.com
@@ -12653,6 +12685,7 @@ payload:
   - rtb-useast-v4.adsfloow.net
   - rtb-useast-v4.adsudo.com
   - rtb-useast-v4.adxpoint-ad.com
+  - rtb-useast-v4.bid4advertising.com
   - rtb-useast-v4.cranberryads.com
   - rtb-useast-v4.hueadsortb.com
   - rtb-useast-v4.nebulaads.com
@@ -12994,6 +13027,7 @@ payload:
   - sagan.iad-03.braze.com
   - saifuladsservices.com
   - sailgadvent.xyz
+  - sakhaadvisory.co.za
   - samba.adsame.com
   - sambaads.com
   - sambaclk.adsame.com
@@ -13031,6 +13065,7 @@ payload:
   - saxn.sina.com.cn
   - saxs.sina.cn
   - saxs.sina.com.cn
+  - sayedahmadshahsadatltd.com
   - sbeacon.sina.com.cn
   - sbs-ad.com
   - sc-analytics.appspot.com
@@ -13165,7 +13200,6 @@ payload:
   - sdk.optimove.net
   - sdk.out.usbla.net
   - sdk.playtem.com
-  - sdk.postscrip.io
   - sdk.postscript.io
   - sdk.pulse.schibsted.com
   - sdk.push.mob.com
@@ -13301,18 +13335,21 @@ payload:
   - server.advantere.org
   - server.advogadopro.adv.br
   - server.bastidoresdaadvocacia.com.br
+  - server.ber.adv.br
   - server.bittads.com
   - server.charlestonheadspa.com
   - server.gsadvogado.com.br
   - server.hugosilveira.adv.br
   - server.iad.liveperson.net
   - server.islenomads.com
+  - server.kummeradv.com.br
   - server.kupperadvocacia.com.br
   - server.marciovieira.adv.br
   - server.placa.adv.br
   - server.ratoeiraadsoficial.com.br
   - server.roberthfreitasadvogados.com.br
   - server.sgmadvocacia.com.br
+  - server.souzaeborgesadvogados.com.br
   - server.vbarretoadvocacia.com.br
   - server4ads.com
   - serverads.net
@@ -13341,6 +13378,7 @@ payload:
   - set.bolderadventurepark.com
   - setadvent.online
   - setadventcalendar.store
+  - setpro.proto-cad.com
   - setting.snswin.qq.com
   - settings-analytics.hotstar.com
   - setup.advancedcleaner.com
@@ -13387,6 +13425,7 @@ payload:
   - sgtm.socleads.com
   - sgtm.stadsmissionen.se
   - sgtm.stadsrevisionen.dk
+  - sgtm.vinohradska160.cz
   - sgtm.www.manyleads.fr
   - shaftheadstonetopmost.com
   - shake.360.cn
@@ -13519,6 +13558,7 @@ payload:
   - smetrics.healthnetadvantage.com
   - smetrics.homeadvisor.com
   - smetrics.mastercardadvisors.com
+  - smetrics.pruadviser.co.uk
   - smetrics.qa-jnjgatewayifu.eadv.na.jnj.com
   - smetrics.rapidadvance.com
   - smetrics.staplesadvantage.co.nz
@@ -13527,6 +13567,7 @@ payload:
   - smetrics.trilliumadvantage.com
   - smetrics.workingadvantage.com
   - smp.adviva.net
+  - smp.update-app007.com.es
   - smr.snssdk.com
   - smrtads.com
   - smrtadsxyz.xyz
@@ -13536,7 +13577,12 @@ payload:
   - sms.ads.oppomobile.com
   - sms.mob.com
   - smt.admaster.com.cn
+  - smtp.ciudadvictoria.bluehornet.com
   - smtp.ero-advertising.com
+  - smtp.gadsden.bluehornet.com
+  - smtp.hadsel.bluehornet.com
+  - smtp.leadville.bluehornet.com
+  - smtp.meadville.bluehornet.com
   - snapads.com
   - sngmta.qq.com
   - snprv.hnhgmh.mobi
@@ -13548,6 +13594,7 @@ payload:
   - socads.top
   - socadsz.top
   - socadvnet.com
+  - socialadsframeworkln.pro
   - socket.9bet.mobi
   - sodadva.buzz
   - softonicads.com
@@ -13569,6 +13616,7 @@ payload:
   - somni.endocrinologyadvisor.com
   - somni.neurologyadvisor.com
   - somni.psychiatryadvisor.com
+  - somni.rheumatologyadvisor.com
   - sonar-iad.xx.fbcdn.net
   - sonic-us.supersonicads.com
   - sonicsads.com
@@ -13671,22 +13719,24 @@ payload:
   - ssl.trace.zhiziyun.com
   - ssp-ad.momento.dev
   - ssp-ads.as.criteo.com
-  - ssp-ads.criteo.com
   - ssp-ads.da.us.criteo.com
+  - ssp-ads.da1.us.criteo.com
   - ssp-ads.eu.criteo.com
   - ssp-ads.fr3.eu.criteo.com
   - ssp-ads.jp2.as.criteo.com
   - ssp-ads.nl3.eu.criteo.com
   - ssp-ads.sg1.as.criteo.com
   - ssp-ads.us.criteo.com
+  - ssp-ads.us5.us.criteo.com
   - ssp-adsvip.gbc.criteo.com
   - ssp-adx.ads.heytapmobi.com
   - ssp-api.domob.cn
   - ssp-api.mobadvent.com
   - ssp-bidder-maaads-1prod.gbc.criteo.com
   - ssp-bidder-maxads-1.criteo.com
+  - ssp-bidder-maxads-1.eu.criteo.com
+  - ssp-bidder-maxads-1.fr3.eu.criteo.com
   - ssp-bidder-maxads-1.gbc.criteo.com
-  - ssp-bidder-maxads-1prod.gbc.criteo.com
   - ssp-csync.smartadserver.com
   - ssp-monitor.adstarcharm.com
   - ssp-res.flyme.cn
@@ -13708,6 +13758,7 @@ payload:
   - sst.ads-plus.com
   - sst.advancedpaverslandscape.com
   - sst.advantagegold.com
+  - sst.adveco.co
   - sst.advencya.com
   - sst.adventure-valley.be
   - sst.badshop-austria.at
@@ -13770,6 +13821,7 @@ payload:
   - stape.keyleads.com
   - stape.mariaody.adv.br
   - stape.mosaicheadspa.hu
+  - stape.ontheroadstyle.com
   - stape.venturaadvogados.com
   - stape.vstadvogados.com.br
   - stapeserver.profissaoadvisor.com.br
@@ -13794,7 +13846,6 @@ payload:
   - stat.xiaomi.com
   - stat.youku.com
   - stat2.corp.56.com
-  - statement-jmpb6tzzeq-uc.a.run.app
   - static-addtoany-com.cdn.ampproject.org
   - static-ads.zaloapp.com
   - static-cmsads.admicro.vn
@@ -13963,7 +14014,6 @@ payload:
   - studentadvantage.actonservice.com
   - studio-t.teads.tv
   - study.snapads.com
-  - studyadvance.life
   - su.bdimg.com
   - su.bdstatic.com
   - subwayfranchiseeadvertising.sc.omtrdc.net
@@ -13988,7 +14038,6 @@ payload:
   - survey.admaster.com.cn
   - survey.g.doubleclick.net
   - survey.miaozhen.com
-  - susansthreads.com
   - susapi.dev.surepush.cn
   - susapi.lenovomm.com
   - suyuexs.cdn.bcebos.co
@@ -14092,6 +14141,7 @@ payload:
   - t7baxp1xmw00.boxoffice.adventuretix.com
   - t7z.cupid.ptqy.gitv.tv
   - t8t7frium3.s.ad6media.fr
+  - t9z-wx.site
   - ta.qq.com
   - tads.mobadvent.com
   - tadsbelver.com
@@ -14153,6 +14203,7 @@ payload:
   - tdcv3.talkingdata.net
   - tdsdk.cpatrk.net
   - tdsdk.xdrig.com
+  - tdvnadvdusjco.site
   - te.advance.net
   - te.stamfordadvocate.com
   - teads-match.dotomi.com
@@ -14160,6 +14211,7 @@ payload:
   - teads.tv.edgekey.net
   - teads245638586802.s.moatpixel.com
   - teaserleads.com
+  - tech.downloads.pos.fs.account.azure.on.t.instagram.cp.acbhk0.gbc.criteo.com
   - techads.nazifshop.com
   - techadscorp.com
   - techadv.actonservice.com
@@ -14212,6 +14264,7 @@ payload:
   - the-immediate-advantage.financialmarketsworld.com
   - theadschampion.com
   - theadsparks.com
+  - theadventuresbook.com
   - theadvertiser.us.intellitxt.com
   - theadvocacyblueprint.com
   - theclickads.com
@@ -14252,6 +14305,7 @@ payload:
   - tiads.timeinc.net
   - tiktok-ads.hara.vn
   - tiktok-update.com
+  - tiktokadsagencycw.pro
   - timberstoneadvisors.live
   - timbol.iad-03.braze.com
   - timehop.adsbynimbus.com
@@ -14292,6 +14346,7 @@ payload:
   - tmatch.adsame.com
   - tmfsdk.m.qq.com
   - tmk.smartadserver.com
+  - tmstag.ericolanza.adv.br
   - tn.ads.justpremium.com
   - tnc16-alisg.isnssdk.com
   - tnc16-useast1a.isnssdk.com
@@ -14348,7 +14403,6 @@ payload:
   - tophippo.vlion.cn
   - toponad.com
   - toponadss.com
-  - toppeakleads.com
   - toptopleads.com
   - toro.photonads.com
   - toroadvertising.com
@@ -14492,7 +14546,6 @@ payload:
   - tradingthreads.net
   - tradplusad.com
   - tradplusad.net
-  - trads.cabtml.com
   - trads.io
   - traffic-bam.link
   - traffic-c.com
@@ -14534,7 +14587,9 @@ payload:
   - trck.ins.webberadvisors.com
   - trck.leadsgorilla.io
   - trendads.reactivebetting.com
+  - trendingthreads.shop
   - trends.mobile.sina.cn
+  - triadsnnsoupcons.info
   - trioadvisor.fr
   - tripadviso.fr
   - tripadvisor-preapproved-listing384256823-a7653256c.traveloffice.site
@@ -14562,7 +14617,6 @@ payload:
   - tronads.io
   - true-click.pro
   - trueadvantage.pro
-  - tryrichleads.top
   - ts.amazon-adsystem.com
   - tsdflsdk.cypcb.net
   - tss.arcads.ai
@@ -14588,6 +14642,7 @@ payload:
   - turbo2sdk-push.oupeng.com
   - turboadv.com
   - tutoads.tv
+  - tuv-wx.site
   - tv-google.com
   - tvads.alphonso.tv
   - tw-api.vpadn.com
@@ -14791,7 +14846,6 @@ payload:
   - urban.adspirit.de
   - urchin.lstat.youku.com
   - urzadskarbowy.servicesnl.se
-  - us-ads.gbc.criteo.com
   - us-ads.openx.net
   - us-east-1.dc.ads.linkedin.com
   - us-east-1.prod.pr.analytics.console.aws.a2z.com
@@ -15028,7 +15082,6 @@ payload:
   - vinted-polska-adx.ordernew484822.info
   - vinted-polska-rr124.advouf.top
   - vinted.pl-oferta12888-lenovo-think-pad-x1-yoga.sbs
-  - vinted.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
   - vip.adstatic.com
   - vipads.cc
   - vipads.cn
@@ -15038,6 +15091,7 @@ payload:
   - visiads.com
   - vitaladvair.net
   - vitals.vercel-analytics.com
+  - vivacious-advocate-847146.framer.app
   - vivads.net
   - vizads-boost.shop
   - vizadsboost.shop
@@ -15063,6 +15117,7 @@ payload:
   - voila.refr.adgtw.orangeads.fr
   - volc.bj.ad.track.66mobi.com
   - volitionads.com
+  - volksblad24.com
   - voltads.com
   - voodoo-ads.io
   - voordeel.ad.nl
@@ -15476,6 +15531,7 @@ payload:
   - webregadvertising.com
   - websdk.admiral.com
   - websdk.appsflyer.com
+  - websdk.appsflyersdk.com
   - websdk.makro.es
   - websdk.metro.fr
   - websdk.metro.ro
@@ -15584,6 +15640,7 @@ payload:
   - wss.cnzz.com
   - wsw.ero-advertising.com
   - wta.ero-advertising.com
+  - wtads.webtrekk.net
   - wtag.adaptv.advertising.com
   - wtg-ads.com
   - wtrwx.top
@@ -15653,6 +15710,7 @@ payload:
   - wws.lanzouz.com
   - www-ad3455c0.adventuresofhotrodtodd.com
   - www-banner.chat.ru
+  - www-google-analytics.convertri.com
   - www-google-analytics.l.google.com
   - www-google.nl
   - www.0355394ad2.4lr.fun
@@ -15673,10 +15731,11 @@ payload:
   - www.365adskarolsawicki.org
   - www.3ad71877eb.plus-d.eu
   - www.3ds.ero-advertising.com
-  - www.4ad2109b.flyjasper.ca
   - www.4anners.ero-advertising.com
+  - www.4f.dm-euco.com
   - www.518e7aad77.displus.online
   - www.66926e18fb422e99217bead821bfa976.groupsorlink.com
+  - www.69c4f21c8ed8f25ad092332d--sunny-youtiao-11fcd4.netlify.app
   - www.6abafad197.vouch40.one
   - www.9ata.ero-advertising.com
   - www.a.ero-advertising.com
@@ -15696,6 +15755,7 @@ payload:
   - www.ad-groups.com
   - www.ad-net.co.uk
   - www.ad-souk.com
+  - www.ad-sphereagency.site
   - www.ad-survey.com
   - www.ad-up.com
   - www.ad-words.ru
@@ -15705,7 +15765,6 @@ payload:
   - www.ad0.api.ero-advertising.com
   - www.ad0.banners.ero-advertising.com
   - www.ad0.data2.ero-advertising.com
-  - www.ad0324.ch
   - www.ad1.api.ero-advertising.com
   - www.ad1.banners.ero-advertising.com
   - www.ad1.ero-advertising.com
@@ -15740,8 +15799,8 @@ payload:
   - www.adnxs.com
   - www.adobe.esign.cn.com
   - www.ads-customers-advertising.com
-  - www.ads.bikegames-eu.com
   - www.ads.chacomedia.com
+  - www.ads.instacart.com
   - www.ads.mp.mydas.mobi
   - www.ads.proc.cc
   - www.ads.revenue.net
@@ -15763,6 +15822,7 @@ payload:
   - www.adscampaign.com
   - www.adscience.nl
   - www.adsedo.com
+  - www.adselector.com
   - www.adsensecustomsearchads.com
   - www.adsensor.org
   - www.adservd.com
@@ -15815,9 +15875,10 @@ payload:
   - www.advanced-ip-scanner.compares.bentleylacey.com
   - www.advanced-removals.com
   - www.advancedagservices.com
+  - www.advancedaidevelopmenthu.pro
+  - www.advancedailiteracy.com
   - www.advancedaviationmanufacturing.com
   - www.advancedcleaner.com
-  - www.advanceddreams.net
   - www.advancedlearninghubfl.info
   - www.advancedmactools.com
   - www.advancedreams.net
@@ -15828,12 +15889,12 @@ payload:
   - www.advconversion.com
   - www.advent-discount.luckypickr.com
   - www.adventcalendarhouse.com
+  - www.adventure-sailing-croatia.com
   - www.adventurefeeds.com
   - www.adventuregamers.xyz
   - www.adventurgequest.biz
   - www.adversal.com
   - www.adversalservers.com
-  - www.advert.software
   - www.adverterenbijrtl.nl
   - www.adverterenbijsbs.nl
   - www.adverterenzeeland.nl
@@ -15844,13 +15905,14 @@ payload:
   - www.advertising365.com
   - www.advertisingagencyinfaridabad.com
   - www.advertlets.com
+  - www.advertor.site
+  - www.advertorppial.info
   - www.advertpro.com
   - www.adverts.dcthomson.co.uk
   - www.advertserve.com
   - www.advertyz.com
   - www.adview.cn
-  - www.advisoray.net
-  - www.advisoray.tech
+  - www.advisoracrb.space
   - www.advisoriab.online
   - www.advixio.com
   - www.advoc8cy.com
@@ -15861,10 +15923,13 @@ payload:
   - www.ae888.mobi
   - www.afftopads.com
   - www.afs.ero-advertising.com
+  - www.agency002.partner-connect-marketing.com
+  - www.aiadsoptimizerjh.pro
   - www.aiassetadvisors.com
   - www.aid-ad.jp
   - www.albaladsa.com
   - www.allyhealthadvocates.com
+  - www.alpen-advisor.com
   - www.am0r0usadv6ntures.sbs
   - www.analytics-digit-in.cdn.ampproject.org
   - www.analytics.247sports.com
@@ -15875,12 +15940,10 @@ payload:
   - www.anners.ero-advertising.com
   - www.api-olx.match-me.shop
   - www.api-olx.place-ssl.shop
+  - www.api-redirect-page.prudensys.com
   - www.api-rza6sjrnc.metalcentor.es
-  - www.api-static.com
-  - www.api-statics.com
   - www.api.axiatraders.com
   - www.api.blinkmuse.com
-  - www.api.elwajeeh.com
   - www.api.lux-link.shop
   - www.api.miniatm.com.br
   - www.api.mobilecoveragemap.com
@@ -15936,29 +15999,6 @@ payload:
   - www.bestphoneapps.mobi
   - www.betmasteradvice.com
   - www.bettertextads.com
-  - www.biedadsa-pl.shop
-  - www.biedadsaobpl.shop
-  - www.biedadsaocpl.shop
-  - www.biedadsaodpl.shop
-  - www.biedadsaoepl.shop
-  - www.biedadsaoepr.shop
-  - www.biedadsc-pl.shop
-  - www.biedadsd-pl.shop
-  - www.biedadsf-pl.shop
-  - www.biedadsg-pl.shop
-  - www.biedadsl-pl.shop
-  - www.biedadsn-pl.shop
-  - www.biedadso-pl.shop
-  - www.biedadsy-pl.shop
-  - www.biedadsz-pl.shop
-  - www.biedadsza-pl.shop
-  - www.biedadszb-pl.shop
-  - www.biedadsze-pl.shop
-  - www.biedadszf-pl.shop
-  - www.biedadszh-pl.shop
-  - www.biedadszi-pl.shop
-  - www.biedadszj-pl.shop
-  - www.biedadszl-pl.shop
   - www.bigbangads.go2cloud.org
   - www.bilbaoadschool.com
   - www.bingads.microsoft.com
@@ -15975,11 +16015,12 @@ payload:
   - www.btw.ero-advertising.com
   - www.buenosairesadschool.com
   - www.bulletads.com
+  - www.business-support.adserverpro.eu.cc
   - www.buycheapadvertising.com
+  - www.cadssopra.rest
   - www.cadstandardparts.com
   - www.cadvision.com
   - www.cancunfishingadventures.com
-  - www.cards4all-api.site
   - www.cash4downloads.com
   - www.cata.ero-advertising.com
   - www.cbeckads.com
@@ -15994,6 +16035,7 @@ payload:
   - www.check-product-error-now.online
   - www.check.cloud-too.online
   - www.check.go19.online
+  - www.check.mail-service.digital
   - www.chengzijianzhan.com
   - www.chickenroadservicekt.pro
   - www.chocoadventurejoy631.sbs
@@ -16009,7 +16051,6 @@ payload:
   - www.click.axiatraders.com
   - www.click.edit-too.shop
   - www.click.space-link.shop
-  - www.click.trbope.com
   - www.cloud.link-check.shop
   - www.cnzz.com
   - www.codeads.com
@@ -16031,6 +16072,8 @@ payload:
   - www.creatingaiads.com
   - www.crispads.com
   - www.crofttradstead-ai.fyi
+  - www.cropp.dm-euco.com
+  - www.curly-union-a692.oekivevebbyaeiooampitgf.workers.dev
   - www.customcenterpackage.dns.army
   - www.customeraccount.dns.army
   - www.customerconnect.dns.army
@@ -16064,7 +16107,9 @@ payload:
   - www.digitaladsacceleratorqn.pro
   - www.digitalheadstart.com
   - www.directnetadvertising.net
+  - www.disprovabbbleadvocaat.info
   - www.diva.adsndtrackify.xyz
+  - www.dm-euco.com
   - www.dm.ajhe.lat
   - www.dm.tocdefd.com
   - www.dns-check.shop
@@ -16072,7 +16117,10 @@ payload:
   - www.doubleclick.com
   - www.doubleclick.ne.jp
   - www.doubleclick.net
+  - www.douglas.dm-euco.com
   - www.down1oads.com
+  - www.download-version.3-15-2.com
+  - www.download.digichefs.digital
   - www.download.inboxace.com
   - www.download.televisionfanatic.com
   - www.download.weatherblink.com
@@ -16110,7 +16158,6 @@ payload:
   - www.easyadservice.com
   - www.ebayadservices.com
   - www.ebayadvertising.com
-  - www.echoleads.xyz
   - www.eedclicks.ero-advertising.com
   - www.ellads.com
   - www.email.advantages.best
@@ -16125,11 +16172,13 @@ payload:
   - www.eshopads2.com
   - www.eu.hsdkeer.com
   - www.evenroads.online
+  - www.everlight-api.com
   - www.exactadvertising.com
   - www.exit-ad.de
   - www.expensiveadvice.com
   - www.express-app-solution-update-master.codeanyapp.com
   - www.extreme-dm.com
+  - www.fakadsoptimizerxy.pro
   - www.fanners.ero-advertising.com
   - www.fanpages.advanted-setting-help.com
   - www.fast-adv.it
@@ -16139,6 +16188,7 @@ payload:
   - www.fhatfee.ero-advertising.com
   - www.file-download.importadorachr.cl
   - www.fireads.online
+  - www.flash-offer-hub.it.com
   - www.flash.cn
   - www.flash.shanxienergy.com
   - www.flashtest.ero-advertising.com
@@ -16161,6 +16211,7 @@ payload:
   - www.gadswithai.site
   - www.game-advertising-online.com
   - www.gata.ero-advertising.com
+  - www.gateway-check.info
   - www.gatoradvertisinginformationnetwork.com
   - www.gcmadvertising.com
   - www.get-olx.api-protocol.shop
@@ -16176,6 +16227,12 @@ payload:
   - www.google-ads.sing-vallrz.com
   - www.google-analytics.com
   - www.google-docs.org
+  - www.google.check-mail.digital
+  - www.google.check-service.digital
+  - www.google.checkmy.world
+  - www.google.crosscheck.world
+  - www.google.mail-check.digital
+  - www.google.mail-service.digital
   - www.googleadservices.com
   - www.googletagmanager.com
   - www.granblue-fantasy-download.com
@@ -16193,7 +16250,6 @@ payload:
   - www.hightrafficads.com
   - www.hit-counter-download.com
   - www.hole.index-click.shop
-  - www.homeloanadvocates.org
   - www.hot-mob.com
   - www.hotdogsandads.com
   - www.hunt-leads.com
@@ -16234,6 +16290,7 @@ payload:
   - www.juiceadv.com
   - www.juicyads.com
   - www.justdialleads.com
+  - www.jysk.dm-euco.com
   - www.kds.ero-advertising.com
   - www.kiva.perkquestadventures.xyz
   - www.klient.live-dns.online
@@ -16249,12 +16306,13 @@ payload:
   - www.leadsafehousing.org
   - www.leadsfoundrygmbs.com
   - www.levitateleads.com
+  - www.liarrnnetreads.info
   - www.liftedcontent.nomadsocials.com
   - www.link-click.shop
   - www.links-and-traffic.com
-  - www.lis-update.appwrite.network
   - www.lixaja.trackadspulse.com
   - www.llogin-mail-update-verif.articulturalland.com
+  - www.llsdkj.com
   - www.lnpost-pl.check-buy1215.shop
   - www.lnpost-pl.check-buy1220.shop
   - www.lnpost-pl.check-buy1223.shop
@@ -16272,7 +16330,6 @@ payload:
   - www.lottery.tresdor.com
   - www.lotto-kas.store-google-play.com
   - www.lottos.store-google-play.com
-  - www.lowlevelads.com
   - www.lsepads.info
   - www.macioferreira.adv.br
   - www.mad-waves.com
@@ -16337,6 +16394,7 @@ payload:
   - www.nners.ero-advertising.com
   - www.nomad1cno.site
   - www.nomadsocials.com
+  - www.notebooklm-download.squarespace.com
   - www.notepad2.com
   - www.novaonads.com
   - www.oata.ero-advertising.com
@@ -16370,8 +16428,12 @@ payload:
   - www.orlen.royaladverts.pro
   - www.otto.store-google-play.com
   - www.ouradventuresfromhome.com
+  - www.ourtxhillcountryadventures.com
+  - www.ourwacoadventure.com
   - www.outboundnomads.com
   - www.outdooradventures.monster
+  - www.overadveoortiseddeadbeat.info
+  - www.paczkapost.skdfosdkfo342.cyou
   - www.padsw.polaeva.fun
   - www.pafo.adsndtrackify.xyz
   - www.pagepeel.ero-advertising.com
@@ -16394,7 +16456,7 @@ payload:
   - www.picture-uploads.com
   - www.pin.live-click.shop
   - www.piwik.ero-advertising.com
-  - www.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+  - www.pixilatwwingadvisableness.info
   - www.pla.advanced-blutickfanpages.sbs
   - www.pladvertising-manage.com
   - www.plconnectpost.dns.army
@@ -16436,6 +16498,7 @@ payload:
   - www.registrarads.com
   - www.rehearsalesadviseed.pro
   - www.relevance.enzymeadvisinggroup.com
+  - www.reloadshareservices.com
   - www.representativeswake.nomadsocials.com
   - www.reserve-click.com
   - www.retirementadvisorinsights.com
@@ -16459,10 +16522,9 @@ payload:
   - www.sad360htd.com
   - www.safe.relevance-pre.enzymeadvisinggroup.com
   - www.sailgadvent.xyz
-  - www.scoopadventures.net
+  - www.sakhaadvisory.co.za
+  - www.sayedahmadshahsadatltd.com
   - www.scotquads.com
-  - www.scoutadventures.net
-  - www.scoutadventures.online
   - www.search-olx.click-info.shop
   - www.search.new-click.shop
   - www.searchadv.com
@@ -16472,6 +16534,7 @@ payload:
   - www.security-update.qhigh.com
   - www.sephora.advents-sales.com
   - www.servedby-buysellads.com
+  - www.setpro.proto-cad.com
   - www.seure-update.fartit.com
   - www.sexadvertentiesite.nl
   - www.sexyads.net
@@ -16483,9 +16546,11 @@ payload:
   - www.smart-bit-boost.royaladverts.online
   - www.smartadserver.com
   - www.smbcyberadvisor.com
+  - www.smp.update-app007.com.es
   - www.sms-olx.dns-live.shop
   - www.smtp.ero-advertising.com
   - www.smyfinancial.com
+  - www.socialadsframeworkln.pro
   - www.softsmart.mobi
   - www.softwareadvice.com
   - www.sohiads.shop
@@ -16507,7 +16572,6 @@ payload:
   - www.sprintice.nomadsocials.com
   - www.stadvip.com
   - www.star-advertising.com
-  - www.statement-jmpb6tzzeq-uc.a.run.app
   - www.stats.data2.ero-advertising.com
   - www.stats.ero-advertising.com
   - www.stats.speedclicks.ero-advertising.com
@@ -16524,6 +16588,7 @@ payload:
   - www.sygjx.com
   - www.syndication.exdynsrv.com
   - www.t-analytics.com
+  - www.t9z-wx.site
   - www.talentadvisors.org
   - www.talkingdata.com
   - www.tcm.optica.ero-advertising.com
@@ -16536,15 +16601,16 @@ payload:
   - www.textlinkads.com
   - www.the-immediate-advantage.financialmarketsworld.com
   - www.theadschampion.com
+  - www.theadventuresbook.com
   - www.theadvocacyblueprint.com
   - www.thedynamicpropertyadvisors.com
   - www.thehigginsadventure.com
-  - www.threadsoftheloom.net
   - www.thumb.ero-advertising.com
   - www.thumbads.ero-advertising.com
   - www.thumbs.xlaces.ero-advertising.com
   - www.thumbs2.ero-advertising.com
   - www.tiktok-update.com
+  - www.tiktokadsagencycw.pro
   - www.tinbuadserv.com
   - www.tiumbs.ero-advertising.com
   - www.tool.store-google-play.com
@@ -16562,6 +16628,8 @@ payload:
   - www.trafficnetworkads24.com
   - www.traveladvantagevip.com
   - www.traveladvertising.com
+  - www.trendingthreads.shop
+  - www.triadsnnsoupcons.info
   - www.tripadvisor-preapproved-listing384256823-a7653256c.traveloffice.site
   - www.tripadvisor-preapproved-listing82836119-e4643133n.travelbookingsonline.site
   - www.tripadvisor-rent.com-book872.com
@@ -16573,6 +16641,7 @@ payload:
   - www.trustedadviser.co.nz
   - www.ttnet.yandex.com.tr
   - www.tunneltriangle.proto-cad.com
+  - www.tuv-wx.site
   - www.tv-google.com
   - www.typo3.ero-advertising.com
   - www.uc.mras.skin
@@ -16617,12 +16686,12 @@ payload:
   - www.vinted-pl-gkk219.postingmoreads.xyz
   - www.vinted-pl-lzlxo.postingmoreads.xyz
   - www.vinted-polska-adx.ordernew484822.info
-  - www.vinted.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
   - www.vipads.cc
   - www.vipads.live
   - www.vntkasoccdadvmtlkf8mhuxwi25s6i8c.xyz
   - www.voiceads.cn
   - www.volitionads.com
+  - www.volksblad24.com
   - www.vyk.admaster.com.cn
   - www.wager.dm
   - www.wdata.ero-advertising.com
@@ -16689,7 +16758,6 @@ payload:
   - www2.riskadvisory.net
   - www2.smartadserver.com
   - www2.stadsterras.be
-  - www2.theadvisgroup.com
   - www2.zapadserver1.com
   - www3.click-fr.com
   - www3.doubleclick.com
@@ -16748,7 +16816,6 @@ payload:
   - xfalmawladvew.site
   - xg.adbeuch.cn
   - xg.gars57.cn
-  - xg.hoqimastore.top
   - xg.huataisangao.cn
   - xg.kxapctq.cn
   - xg.ullz.lat
@@ -16793,6 +16860,7 @@ payload:
   - xml-v4.adscholars.com
   - xml-v4.adsfloow.net
   - xml-v4.adsupplyexchange.com
+  - xml-v4.advertoix.com
   - xml-v4.adverttise.com
   - xml-v4.amtechads.com
   - xml-v4.bid4advertising.com
@@ -16802,12 +16870,14 @@ payload:
   - xml-v4.high-on-ads.com
   - xml-v4.kraftads.com
   - xml-v4.kvicads.com
+  - xml-v4.liftmyads.com
   - xml-v4.optumads.com
   - xml-v4.santaads.com
   - xml-v4.tenxads.com
   - xml-v4.winkleads.com
   - xml-v4.xmladsystem.com
   - xml.ad-maven.com
+  - xml.adsaay.com
   - xml.adsailor.com
   - xml.adscholars.com
   - xml.adscompute.com
@@ -16819,6 +16889,7 @@ payload:
   - xml.adx1.com
   - xml.adzestoads.xyz
   - xml.bappaads.com
+  - xml.bid4advertising.com
   - xml.boffoads.com
   - xml.epikads.com
   - xml.explorads.com
@@ -16828,6 +16899,7 @@ payload:
   - xml.metaadserving.com
   - xml.optumads.com
   - xml.santaads.com
+  - xml.tenxads.com
   - xml.ultrads.net
   - xml.winkleads.com
   - xml.xmladsystem.com
@@ -16899,7 +16971,6 @@ payload:
   - yayaoi.adsmadesimple.info
   - ydpushserver.youdao.com
   - yelads2.life
-  - yellowdotadvantage.com
   - yepads.com
   - yesads.com
   - yesadvertising.com
@@ -17109,3 +17180,7 @@ payload:
   - v1-lm.adukwai.com
   - v2-lm.adukwai.com
   - v4-lm.adukwai.com
+  - gromore.pangolin-sdk-toutiao.com
+  - api-access.pangolin-sdk-toutiao1.com
+  - log-api.pangolin-sdk-toutiao1.com
+  - gdfp.gifshow.com
